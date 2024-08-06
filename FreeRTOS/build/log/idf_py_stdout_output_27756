@@ -1,0 +1,150 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (27) boot: ESP-IDF v5.3-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Aug  5 2024 15:42:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a308h ( 41736) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001a330 vaddr=3fc92300 size=02a34h ( 10804) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0001cd6c vaddr=40374000 size=032ach ( 12972) load[0m
+[0;32mI (119) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=177ach ( 96172) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=000377d4 vaddr=403772ac size=0b010h ( 45072) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (170) cpu_start: Multicore app[0m
+[0;32mI (180) cpu_start: Pro cpu start user code[0m
+[0;32mI (180) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (180) app_init: Application information:[0m
+[0;32mI (183) app_init: Project name:     FreeRTOS[0m
+[0;32mI (188) app_init: App version:      1[0m
+[0;32mI (192) app_init: Compile time:     Aug  5 2024 15:24:50[0m
+[0;32mI (198) app_init: ELF file SHA256:  828a26325...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.3-dirty[0m
+[0;32mI (208) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (213) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (230) heap_init: At 3FC955F0 len 00054120 (336 KiB): RAM[0m
+[0;32mI (236) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (242) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (256) spi_flash: detected chip: gd[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;33mW (263) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (276) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (283) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (291) main_task: Started on CPU0[0m
+[0;32mI (311) main_task: Calling app_main()[0m
+[0;32mI (311) main_task: Returned from app_main()[0m
+[0;32mI (311) queue: receive queue value:0[0m
+[0;32mI (1311) queue: receive queue value:1[0m
+[0;32mI (2311) queue: receive queue value:2[0m
+[0;32mI (3311) queue: receive queue value:3[0m
+[0;32mI (4311) queue: receive queue value:4[0m
+[0;32mI (5311) queue: receive queue value:5[0m
+[0;32mI (6311) queue: receive queue value:6[0m
+[0;32mI (7311) queue: receive queue value:7[0m
+[0;32mI (8311) queue: receive queue value:8[0m
+[0;32mI (9311) queue: receive queue value:9[0m
+[0;32mI (10311) queue: receive queue value:10[0m
+[0;32mI (11311) queue: receive queue value:11[0m
+[0;32mI (12311) queue: receive queue value:12[0m
+[0;32mI (13311) queue: receive queue value:13[0m
+[0;32mI (14311) queue: receive queue value:14[0m
+[0;32mI (15311) queue: receive queue value:15[0m
+[0;32mI (16311) queue: receive queue value:16[0m
+[0;32mI (17311) queue: receive queue value:17[0m
+[0;32mI (18311) queue: receive queue value:18[0m
+[0;32mI (19311) queue: receive queue value:19[0m
+[0;32mI (20311) queue: receive queue value:20[0m
+[0;32mI (21311) queue: receive queue value:21[0m
+[0;32mI (22311) queue: receive queue value:22[0m
+[0;32mI (23311) queue: receive queue value:23[0m
+[0;32mI (24311) queue: receive queue value:24[0m
+[0;32mI (25311) queue: receive queue value:25[0m
+[0;32mI (26311) queue: receive queue value:26[0m
+[0;32mI (27311) queue: receive queue value:27[0m
+[0;32mI (28311) queue: receive queue value:28[0m
+[0;32mI (29311) queue: receive queue value:29[0m
+[0;32mI (30311) queue: receive queue value:30[0m
+[0;32mI (31311) queue: receive queue value:31[0m
+[0;32mI (32311) queue: receive queue value:32[0m
+[0;32mI (33311) queue: receive queue value:33[0m
+[0;32mI (34311) queue: receive queue value:34[0m
+[0;32mI (35311) queue: receive queue value:35[0m
+[0;32mI (36311) queue: receive queue value:36[0m
+[0;32mI (37311) queue: receive queue value:37[0m
+[0;32mI (38311) queue: receive queue value:38[0m
+[0;32mI (39311) queue: receive queue value:39[0m
+[0;32mI (40311) queue: receive queue value:40[0m
+[0;32mI (41311) queue: receive queue value:41[0m
+[0;32mI (42311) queue: receive queue value:42[0m
+[0;32mI (43311) queue: receive queue value:43[0m
+[0;32mI (44311) queue: receive queue value:44[0m
+[0;32mI (45311) queue: receive queue value:45[0m
+[0;32mI (46311) queue: receive queue value:46[0m
+[0;32mI (47311) queue: receive queue value:47[0m
+[0;32mI (48311) queue: receive queue value:48[0m
+[0;32mI (49311) queue: receive queue value:49[0m
+[0;32mI (50311) queue: receive queue value:50[0m
+[0;32mI (51311) queue: receive queue value:51[0m
+[0;32mI (52311) queue: receive queue value:52[0m
+[0;32mI (53311) queue: receive queue value:53[0m
+[0;32mI (54311) queue: receive queue value:54[0m
+[0;32mI (55311) queue: receive queue value:55[0m
+[0;32mI (56311) queue: receive queue value:56[0m
+[0;32mI (57311) queue: receive queue value:57[0m
+[0;32mI (58311) queue: receive queue value:58[0m
+[0;32mI (59311) queue: receive queue value:59[0m
+[0;32mI (60311) queue: receive queue value:60[0m
+[0;32mI (61311) queue: receive queue value:61[0m
+[0;32mI (62311) queue: receive queue value:62[0m
+[0;32mI (63311) queue: receive queue value:63[0m
+[0;32mI (64311) queue: receive queue value:64[0m
+[0;32mI (65311) queue: receive queue value:65[0m
+[0;32mI (66311) queue: receive queue value:66[0m
+[0;32mI (67311) queue: receive queue value:67[0m
+[0;32mI (68311) queue: receive queue value:68[0m
+[0;32mI (69311) queue: receive queue value:69[0m
+[0;32mI (70311) queue: receive queue value:70[0m
+[0;32mI (71311) queue: receive queue value:71[0m
+[0;32mI (72311) queue: receive queue value:72[0m
+[0;32mI (73311) queue: receive queue value:73[0m
+[0;32mI (74311) queue: receive queue value:74[0m
+[0;32mI (75311) queue: receive queue value:75[0m
+[0;32mI (76311) queue: receive queue value:76[0m
+[0;32mI (77311) queue: receive queue value:77[0m
+[0;32mI (78311) queue: receive queue value:78[0m
+[0;32mI (79311) queue: receive queue value:79[0m
+[0;32mI (80311) queue: receive queue value:80[0m
+[0;32mI (81311) queue: receive queue value:81[0m
+[0;32mI (82311) queue: receive queue value:82[0m
+[0;32mI (83311) queue: receive queue value:83[0m
+[0;32mI (84311) queue: receive queue value:84[0m
+[0;32mI (85311) queue: receive queue value:85[0m
+[0;32mI (86311) queue: receive queue value:86[0m
+[0;32mI (87311) queue: receive queue value:87[0m
+[0;32mI (88311) queue: receive queue value:88[0m
+[0;32mI (89311) queue: receive queue value:89[0m
+[0;32mI (90311) queue: receive queue value:90[0m
+[0;32mI (91311) queue: receive queue value:91[0m
+[0;32mI (92311) queue: receive queue value:92[0m
+[0;32mI (93311) queue: receiv

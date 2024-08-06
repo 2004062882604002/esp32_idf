@@ -1,0 +1,1354 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (27) boot: ESP-IDF v5.3-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Aug  5 2024 15:42:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a348h ( 41800) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001a370 vaddr=3fc92300 size=02a34h ( 10804) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0001cdac vaddr=40374000 size=0326ch ( 12908) load[0m
+[0;32mI (119) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=17858h ( 96344) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=00037880 vaddr=4037726c size=0b050h ( 45136) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (170) cpu_start: Multicore app[0m
+[0;32mI (180) cpu_start: Pro cpu start user code[0m
+[0;32mI (180) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (180) app_init: Application information:[0m
+[0;32mI (183) app_init: Project name:     FreeRTOS[0m
+[0;32mI (188) app_init: App version:      1[0m
+[0;32mI (192) app_init: Compile time:     Aug  5 2024 15:24:50[0m
+[0;32mI (198) app_init: ELF file SHA256:  d50ee61e1...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.3-dirty[0m
+[0;32mI (208) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (213) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (230) heap_init: At 3FC955F0 len 00054120 (336 KiB): RAM[0m
+[0;32mI (236) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (242) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (256) spi_flash: detected chip: gd[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;33mW (263) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (276) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (283) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (291) main_task: Started on CPU0[0m
+[0;32mI (311) main_task: Calling app_main()[0m
+[0;32mI (311) queue: receive queue value:0[0m
+[0;32mI (311) main_task: Returned from app_main()[0m
+[0;32mI (311) bin: task D take binsem success[0m
+[0;32mI (1311) queue: receive queue value:1[0m
+[0;32mI (1311) bin: task D take binsem success[0m
+[0;32mI (2311) queue: receive queue value:2[0m
+[0;32mI (2311) bin: task D take binsem success[0m
+[0;32mI (3311) queue: receive queue value:3[0m
+[0;32mI (3311) bin: task D take binsem success[0m
+[0;32mI (4311) queue: receive queue value:4[0m
+[0;32mI (4311) bin: task D take binsem success[0m
+[0;32mI (5311) queue: receive queue value:5[0m
+[0;32mI (5311) bin: task D take binsem success[0m
+[0;32mI (6311) queue: receive queue value:6[0m
+[0;32mI (6311) bin: task D take binsem success[0m
+[0;32mI (7311) queue: receive queue value:7[0m
+[0;32mI (7311) bin: task D take binsem success[0m
+[0;32mI (8311) queue: receive queue value:8[0m
+[0;32mI (8311) bin: task D take binsem success[0m
+[0;32mI (9311) queue: receive queue value:9[0m
+[0;32mI (9311) bin: task D take binsem success[0m
+[0;32mI (10311) queue: receive queue value:10[0m
+[0;32mI (10311) bin: task D take binsem success[0m
+[0;32mI (11311) queue: receive queue value:11[0m
+[0;32mI (11311) bin: task D take binsem success[0m
+[0;32mI (12311) queue: receive queue value:12[0m
+[0;32mI (12311) bin: task D take binsem success[0m
+[0;32mI (13311) queue: receive queue value:13[0m
+[0;32mI (13311) bin: task D take binsem success[0m
+[0;32mI (14311) queue: receive queue value:14[0m
+[0;32mI (14311) bin: task D take binsem success[0m
+[0;32mI (15311) queue: receive queue value:15[0m
+[0;32mI (15311) bin: task D take binsem success[0m
+[0;32mI (16311) queue: receive queue value:16[0m
+[0;32mI (16311) bin: task D take binsem success[0m
+[0;32mI (17311) queue: receive queue value:17[0m
+[0;32mI (17311) bin: task D take binsem success[0m
+[0;32mI (18311) queue: receive queue value:18[0m
+[0;32mI (18311) bin: task D take binsem success[0m
+[0;32mI (19311) queue: receive queue value:19[0m
+[0;32mI (19311) bin: task D take binsem success[0m
+[0;32mI (20311) queue: receive queue value:20[0m
+[0;32mI (20311) bin: task D take binsem success[0m
+[0;32mI (21311) queue: receive queue value:21[0m
+[0;32mI (21311) bin: task D take binsem success[0m
+[0;32mI (22311) queue: receive queue value:22[0m
+[0;32mI (22311) bin: task D take binsem success[0m
+[0;32mI (23311) queue: receive queue value:23[0m
+[0;32mI (23311) bin: task D take binsem success[0m
+[0;32mI (24311) queue: receive queue value:24[0m
+[0;32mI (24311) bin: task D take binsem success[0m
+[0;32mI (25311) queue: receive queue value:25[0m
+[0;32mI (25311) bin: task D take binsem success[0m
+[0;32mI (26311) queue: receive queue value:26[0m
+[0;32mI (26311) bin: task D take binsem success[0m
+[0;32mI (27311) queue: receive queue value:27[0m
+[0;32mI (27311) bin: task D take binsem success[0m
+[0;32mI (28311) queue: receive queue value:28[0m
+[0;32mI (28311) bin: task D take binsem success[0m
+[0;32mI (29311) queue: receive queue value:29[0m
+[0;32mI (29311) bin: task D take binsem success[0m
+[0;32mI (30311) queue: receive queue value:30[0m
+[0;32mI (30311) bin: task D take binsem success[0m
+[0;32mI (31311) queue: receive queue value:31[0m
+[0;32mI (31311) bin: task D take binsem success[0m
+[0;32mI (32311) queue: receive queue value:32[0m
+[0;32mI (32311) bin: task D take binsem success[0m
+[0;32mI (33311) queue: receive queue value:33[0m
+[0;32mI (33311) bin: task D take binsem success[0m
+[0;32mI (34311) queue: receive queue value:34[0m
+[0;32mI (34311) bin: task D take binsem success[0m
+[0;32mI (35311) queue: receive queue value:35[0m
+[0;32mI (35311) bin: task D take binsem success[0m
+[0;32mI (36311) queue: receive queue value:36[0m
+[0;32mI (36311) bin: task D take binsem success[0m
+[0;32mI (37311) queue: receive queue value:37[0m
+[0;32mI (37311) bin: task D take binsem success[0m
+[0;32mI (38311) queue: receive queue value:38[0m
+[0;32mI (38311) bin: task D take binsem success[0m
+[0;32mI (39311) queue: receive queue value:39[0m
+[0;32mI (39311) bin: task D take binsem success[0m
+[0;32mI (40311) queue: receive queue value:40[0m
+[0;32mI (40311) bin: task D take binsem success[0m
+[0;32mI (41311) queue: receive queue value:41[0m
+[0;32mI (41311) bin: task D take binsem success[0m
+[0;32mI (42311) queue: receive queue value:42[0m
+[0;32mI (42311) bin: task D take binsem success[0m
+[0;32mI (43311) queue: receive queue value:43[0m
+[0;32mI (43311) bin: task D take binsem success[0m
+[0;32mI (44311) queue: receive queue value:44[0m
+[0;32mI (44311) bin: task D take binsem success[0m
+[0;32mI (45311) queue: receive queue value:45[0m
+[0;32mI (45311) bin: task D take binsem success[0m
+[0;32mI (46311) queue: receive queue value:46[0m
+[0;32mI (46311) bin: task D take binsem success[0m
+[0;32mI (47311) queue: receive queue value:47[0m
+[0;32mI (47311) bin: task D take binsem success[0m
+[0;32mI (48311) queue: receive queue value:48[0m
+[0;32mI (48311) bin: task D take binsem success[0m
+[0;32mI (49311) queue: receive queue value:49[0m
+[0;32mI (49311) bin: task D take binsem success[0m
+[0;32mI (50311) queue: receive queue value:50[0m
+[0;32mI (50311) bin: task D take binsem success[0m
+[0;32mI (51311) queue: receive queue value:51[0m
+[0;32mI (51311) bin: task D take binsem success[0m
+[0;32mI (52311) queue: receive queue value:52[0m
+[0;32mI (52311) bin: task D take binsem success[0m
+[0;32mI (53311) queue: receive queue value:53[0m
+[0;32mI (53311) bin: task D take binsem success[0m
+[0;32mI (54311) queue: receive queue value:54[0m
+[0;32mI (54311) bin: task D take binsem success[0m
+[0;32mI (55311) queue: receive queue value:55[0m
+[0;32mI (55311) bin: task D take binsem success[0m
+[0;32mI (56311) queue: receive queue value:56[0m
+[0;32mI (56311) bin: task D take binsem success[0m
+[0;32mI (57311) queue: receive queue value:57[0m
+[0;32mI (57311) bin: task D take binsem success[0m
+[0;32mI (58311) queue: receive queue value:58[0m
+[0;32mI (58311) bin: task D take binsem success[0m
+[0;32mI (59311) queue: receive queue value:59[0m
+[0;32mI (59311) bin: task D take binsem success[0m
+[0;32mI (60311) queue: receive queue value:60[0m
+[0;32mI (60311) bin: task D take binsem success[0m
+[0;32mI (61311) queue: receive queue value:61[0m
+[0;32mI (61311) bin: task D take binsem success[0m
+[0;32mI (62311) queue: receive queue value:62[0m
+[0;32mI (62311) bin: task D take binsem success[0m
+[0;32mI (63311) queue: receive queue value:63[0m
+[0;32mI (63311) bin: task D take binsem success[0m
+[0;32mI (64311) queue: receive queue value:64[0m
+[0;32mI (64311) bin: task D take binsem success[0m
+[0;32mI (65311) queue: receive queue value:65[0m
+[0;32mI (65311) bin: task D take binsem success[0m
+[0;32mI (66311) queue: receive queue value:66[0m
+[0;32mI (66311) bin: task D take binsem success[0m
+[0;32mI (67311) queue: receive queue value:67[0m
+[0;32mI (67311) bin: task D take binsem success[0m
+[0;32mI (68311) queue: receive queue value:68[0m
+[0;32mI (68311) bin: task D take binsem success[0m
+[0;32mI (69311) queue: receive queue value:69[0m
+[0;32mI (69311) bin: task D take binsem success[0m
+[0;32mI (70311) queue: receive queue value:70[0m
+[0;32mI (70311) bin: task D take binsem success[0m
+[0;32mI (71311) queue: receive queue value:71[0m
+[0;32mI (71311) bin: task D take binsem success[0m
+[0;32mI (72311) queue: receive queue value:72[0m
+[0;32mI (72311) bin: task D take binsem success[0m
+[0;32mI (73311) queue: receive queue value:73[0m
+[0;32mI (73311) bin: task D take binsem success[0m
+[0;32mI (74311) queue: receive queue value:74[0m
+[0;32mI (74311) bin: task D take binsem success[0m
+[0;32mI (75311) queue: receive queue value:75[0m
+[0;32mI (75311) bin: task D take binsem success[0m
+[0;32mI (76311) queue: receive queue value:76[0m
+[0;32mI (76311) bin: task D take binsem success[0m
+[0;32mI (77311) queue: receive queue value:77[0m
+[0;32mI (77311) bin: task D take binsem success[0m
+[0;32mI (78311) queue: receive queue value:78[0m
+[0;32mI (78311) bin: task D take binsem success[0m
+[0;32mI (79311) queue: receive queue value:79[0m
+[0;32mI (79311) bin: task D take binsem success[0m
+[0;32mI (80311) queue: receive queue value:80[0m
+[0;32mI (80311) bin: task D take binsem success[0m
+[0;32mI (81311) queue: receive queue value:81[0m
+[0;32mI (81311) bin: task D take binsem success[0m
+[0;32mI (82311) queue: receive queue value:82[0m
+[0;32mI (82311) bin: task D take binsem success[0m
+[0;32mI (83311) queue: receive queue value:83[0m
+[0;32mI (83311) bin: task D take binsem success[0m
+[0;32mI (84311) queue: receive queue value:84[0m
+[0;32mI (84311) bin: task D take binsem success[0m
+[0;32mI (85311) queue: receive queue value:85[0m
+[0;32mI (85311) bin: task D take binsem success[0m
+[0;32mI (86311) queue: receive queue value:86[0m
+[0;32mI (86311) bin: task D take binsem success[0m
+[0;32mI (87311) queue: receive queue value:87[0m
+[0;32mI (87311) bin: task D take binsem success[0m
+[0;32mI (88311) queue: receive queue value:88[0m
+[0;32mI (88311) bin: task D take binsem success[0m
+[0;32mI (89311) queue: receive queue value:89[0m
+[0;32mI (89311) bin: task D take binsem success[0m
+[0;32mI (90311) queue: receive queue value:90[0m
+[0;32mI (90311) bin: task D take binsem success[0m
+[0;32mI (91311) queue: receive queue value:91[0m
+[0;32mI (91311) bin: task D take binsem success[0m
+[0;32mI (92311) queue: receive queue value:92[0m
+[0;32mI (92311) bin: task D take binsem success[0m
+[0;32mI (93311) queue: receive queue value:93[0m
+[0;32mI (93311) bin: task D take binsem success[0m
+[0;32mI (94311) queue: receive queue value:94[0m
+[0;32mI (94311) bin: task D take binsem success[0m
+[0;32mI (95311) queue: receive queue value:95[0m
+[0;32mI (95311) bin: task D take binsem success[0m
+[0;32mI (96311) queue: receive queue value:96[0m
+[0;32mI (96311) bin: task D take binsem success[0m
+[0;32mI (97311) queue: receive queue value:97[0m
+[0;32mI (97311) bin: task D take binsem success[0m
+[0;32mI (98311) queue: receive queue value:98[0m
+[0;32mI (98311) bin: task D take binsem success[0m
+[0;32mI (99311) queue: receive queue value:99[0m
+[0;32mI (99311) bin: task D take binsem success[0m
+[0;32mI (100311) queue: receive queue value:100[0m
+[0;32mI (100311) bin: task D take binsem success[0m
+[0;32mI (101311) queue: receive queue value:101[0m
+[0;32mI (101311) bin: task D take binsem success[0m
+[0;32mI (102311) queue: receive queue value:102[0m
+[0;32mI (102311) bin: task D take binsem success[0m
+[0;32mI (103311) queue: receive queue value:103[0m
+[0;32mI (103311) bin: task D take binsem success[0m
+[0;32mI (104311) queue: receive queue value:104[0m
+[0;32mI (104311) bin: task D take binsem success[0m
+[0;32mI (105311) queue: receive queue value:105[0m
+[0;32mI (105311) bin: task D take binsem success[0m
+[0;32mI (106311) queue: receive queue value:106[0m
+[0;32mI (106311) bin: task D take binsem success[0m
+[0;32mI (107311) queue: receive queue value:107[0m
+[0;32mI (107311) bin: task D take binsem success[0m
+[0;32mI (108311) queue: receive queue value:108[0m
+[0;32mI (108311) bin: task D take binsem success[0m
+[0;32mI (109311) queue: receive queue value:109[0m
+[0;32mI (109311) bin: task D take binsem success[0m
+[0;32mI (110311) queue: receive queue value:110[0m
+[0;32mI (110311) bin: task D take binsem success[0m
+[0;32mI (111311) queue: receive queue value:111[0m
+[0;32mI (111311) bin: task D take binsem success[0m
+[0;32mI (112311) queue: receive queue value:112[0m
+[0;32mI (112311) bin: task D take binsem success[0m
+[0;32mI (113311) queue: receive queue value:113[0m
+[0;32mI (113311) bin: task D take binsem success[0m
+[0;32mI (114311) queue: receive queue value:114[0m
+[0;32mI (114311) bin: task D take binsem success[0m
+[0;32mI (115311) queue: receive queue value:115[0m
+[0;32mI (115311) bin: task D take binsem success[0m
+[0;32mI (116311) queue: receive queue value:116[0m
+[0;32mI (116311) bin: task D take binsem success[0m
+[0;32mI (117311) queue: receive queue value:117[0m
+[0;32mI (117311) bin: task D take binsem success[0m
+[0;32mI (118311) queue: receive queue value:118[0m
+[0;32mI (118311) bin: task D take binsem success[0m
+[0;32mI (119311) queue: receive queue value:119[0m
+[0;32mI (119311) bin: task D take binsem success[0m
+[0;32mI (120311) queue: receive queue value:120[0m
+[0;32mI (120311) bin: task D take binsem success[0m
+[0;32mI (121311) queue: receive queue value:121[0m
+[0;32mI (121311) bin: task D take binsem success[0m
+[0;32mI (122311) queue: receive queue value:122[0m
+[0;32mI (122311) bin: task D take binsem success[0m
+[0;32mI (123311) queue: receive queue value:123[0m
+[0;32mI (123311) bin: task D take binsem success[0m
+[0;32mI (124311) queue: receive queue value:124[0m
+[0;32mI (124311) bin: task D take binsem success[0m
+[0;32mI (125311) queue: receive queue value:125[0m
+[0;32mI (125311) bin: task D take binsem success[0m
+[0;32mI (126311) queue: receive queue value:126[0m
+[0;32mI (126311) bin: task D take binsem success[0m
+[0;32mI (127311) queue: receive queue value:127[0m
+[0;32mI (127311) bin: task D take binsem success[0m
+[0;32mI (128311) queue: receive queue value:128[0m
+[0;32mI (128311) bin: task D take binsem success[0m
+[0;32mI (129311) queue: receive queue value:129[0m
+[0;32mI (129311) bin: task D take binsem success[0m
+[0;32mI (130311) queue: receive queue value:130[0m
+[0;32mI (130311) bin: task D take binsem success[0m
+[0;32mI (131311) queue: receive queue value:131[0m
+[0;32mI (131311) bin: task D take binsem success[0m
+[0;32mI (132311) queue: receive queue value:132[0m
+[0;32mI (132311) bin: task D take binsem success[0m
+[0;32mI (133311) queue: receive queue value:133[0m
+[0;32mI (133311) bin: task D take binsem success[0m
+[0;32mI (134311) queue: receive queue value:134[0m
+[0;32mI (134311) bin: task D take binsem success[0m
+[0;32mI (135311) queue: receive queue value:135[0m
+[0;32mI (135311) bin: task D take binsem success[0m
+[0;32mI (136311) queue: receive queue value:136[0m
+[0;32mI (136311) bin: task D take binsem success[0m
+[0;32mI (137311) queue: receive queue value:137[0m
+[0;32mI (137311) bin: task D take binsem success[0m
+[0;32mI (138311) queue: receive queue value:138[0m
+[0;32mI (138311) bin: task D take binsem success[0m
+[0;32mI (139311) queue: receive queue value:139[0m
+[0;32mI (139311) bin: task D take binsem success[0m
+[0;32mI (140311) queue: receive queue value:140[0m
+[0;32mI (140311) bin: task D take binsem success[0m
+[0;32mI (141311) queue: receive queue value:141[0m
+[0;32mI (141311) bin: task D take binsem success[0m
+[0;32mI (142311) queue: receive queue value:142[0m
+[0;32mI (142311) bin: task D take binsem success[0m
+[0;32mI (143311) queue: receive queue value:143[0m
+[0;32mI (143311) bin: task D take binsem success[0m
+[0;32mI (144311) queue: receive queue value:144[0m
+[0;32mI (144311) bin: task D take binsem success[0m
+[0;32mI (145311) queue: receive queue value:145[0m
+[0;32mI (145311) bin: task D take binsem success[0m
+[0;32mI (146311) queue: receive queue value:146[0m
+[0;32mI (146311) bin: task D take binsem success[0m
+[0;32mI (147311) queue: receive queue value:147[0m
+[0;32mI (147311) bin: task D take binsem success[0m
+[0;32mI (148311) queue: receive queue value:148[0m
+[0;32mI (148311) bin: task D take binsem success[0m
+[0;32mI (149311) queue: receive queue value:149[0m
+[0;32mI (149311) bin: task D take binsem success[0m
+[0;32mI (150311) queue: receive queue value:150[0m
+[0;32mI (150311) bin: task D take binsem success[0m
+[0;32mI (151311) queue: receive queue value:151[0m
+[0;32mI (151311) bin: task D take binsem success[0m
+[0;32mI (152311) queue: receive queue value:152[0m
+[0;32mI (152311) bin: task D take binsem success[0m
+[0;32mI (153311) queue: receive queue value:153[0m
+[0;32mI (153311) bin: task D take binsem success[0m
+[0;32mI (154311) queue: receive queue value:154[0m
+[0;32mI (154311) bin: task D take binsem success[0m
+[0;32mI (155311) queue: receive queue value:155[0m
+[0;32mI (155311) bin: task D take binsem success[0m
+[0;32mI (156311) queue: receive queue value:156[0m
+[0;32mI (156311) bin: task D take binsem success[0m
+[0;32mI (157311) queue: receive queue value:157[0m
+[0;32mI (157311) bin: task D take binsem success[0m
+[0;32mI (158311) queue: receive queue value:158[0m
+[0;32mI (158311) bin: task D take binsem success[0m
+[0;32mI (159311) queue: receive queue value:159[0m
+[0;32mI (159311) bin: task D take binsem success[0m
+[0;32mI (160311) queue: receive queue value:160[0m
+[0;32mI (160311) bin: task D take binsem success[0m
+[0;32mI (161311) queue: receive queue value:161[0m
+[0;32mI (161311) bin: task D take binsem success[0m
+[0;32mI (162311) queue: receive queue value:162[0m
+[0;32mI (162311) bin: task D take binsem success[0m
+[0;32mI (163311) queue: receive queue value:163[0m
+[0;32mI (163311) bin: task D take binsem success[0m
+[0;32mI (164311) queue: receive queue value:164[0m
+[0;32mI (164311) bin: task D take binsem success[0m
+[0;32mI (165311) queue: receive queue value:165[0m
+[0;32mI (165311) bin: task D take binsem success[0m
+[0;32mI (166311) queue: receive queue value:166[0m
+[0;32mI (166311) bin: task D take binsem success[0m
+[0;32mI (167311) queue: receive queue value:167[0m
+[0;32mI (167311) bin: task D take binsem success[0m
+[0;32mI (168311) queue: receive queue value:168[0m
+[0;32mI (168311) bin: task D take binsem success[0m
+[0;32mI (169311) queue: receive queue value:169[0m
+[0;32mI (169311) bin: task D take binsem success[0m
+[0;32mI (170311) queue: receive queue value:170[0m
+[0;32mI (170311) bin: task D take binsem success[0m
+[0;32mI (171311) queue: receive queue value:171[0m
+[0;32mI (171311) bin: task D take binsem success[0m
+[0;32mI (172311) queue: receive queue value:172[0m
+[0;32mI (172311) bin: task D take binsem success[0m
+[0;32mI (173311) queue: receive queue value:173[0m
+[0;32mI (173311) bin: task D take binsem success[0m
+[0;32mI (174311) queue: receive queue value:174[0m
+[0;32mI (174311) bin: task D take binsem success[0m
+[0;32mI (175311) queue: receive queue value:175[0m
+[0;32mI (175311) bin: task D take binsem success[0m
+[0;32mI (176311) queue: receive queue value:176[0m
+[0;32mI (176311) bin: task D take binsem success[0m
+[0;32mI (177311) queue: receive queue value:177[0m
+[0;32mI (177311) bin: task D take binsem success[0m
+[0;32mI (178311) queue: receive queue value:178[0m
+[0;32mI (178311) bin: task D take binsem success[0m
+[0;32mI (179311) queue: receive queue value:179[0m
+[0;32mI (179311) bin: task D take binsem success[0m
+[0;32mI (180311) queue: receive queue value:180[0m
+[0;32mI (180311) bin: task D take binsem success[0m
+[0;32mI (181311) queue: receive queue value:181[0m
+[0;32mI (181311) bin: task D take binsem success[0m
+[0;32mI (182311) queue: receive queue value:182[0m
+[0;32mI (182311) bin: task D take binsem success[0m
+[0;32mI (183311) queue: receive queue value:183[0m
+[0;32mI (183311) bin: task D take binsem success[0m
+[0;32mI (184311) queue: receive queue value:184[0m
+[0;32mI (184311) bin: task D take binsem success[0m
+[0;32mI (185311) queue: receive queue value:185[0m
+[0;32mI (185311) bin: task D take binsem success[0m
+[0;32mI (186311) queue: receive queue value:186[0m
+[0;32mI (186311) bin: task D take binsem success[0m
+[0;32mI (187311) queue: receive queue value:187[0m
+[0;32mI (187311) bin: task D take binsem success[0m
+[0;32mI (188311) queue: receive queue value:188[0m
+[0;32mI (188311) bin: task D take binsem success[0m
+[0;32mI (189311) queue: receive queue value:189[0m
+[0;32mI (189311) bin: task D take binsem success[0m
+[0;32mI (190311) queue: receive queue value:190[0m
+[0;32mI (190311) bin: task D take binsem success[0m
+[0;32mI (191311) queue: receive queue value:191[0m
+[0;32mI (191311) bin: task D take binsem success[0m
+[0;32mI (192311) queue: receive queue value:192[0m
+[0;32mI (192311) bin: task D take binsem success[0m
+[0;32mI (193311) queue: receive queue value:193[0m
+[0;32mI (193311) bin: task D take binsem success[0m
+[0;32mI (194311) queue: receive queue value:194[0m
+[0;32mI (194311) bin: task D take binsem success[0m
+[0;32mI (195311) queue: receive queue value:195[0m
+[0;32mI (195311) bin: task D take binsem success[0m
+[0;32mI (196311) queue: receive queue value:196[0m
+[0;32mI (196311) bin: task D take binsem success[0m
+[0;32mI (197311) queue: receive queue value:197[0m
+[0;32mI (197311) bin: task D take binsem success[0m
+[0;32mI (198311) queue: receive queue value:198[0m
+[0;32mI (198311) bin: task D take binsem success[0m
+[0;32mI (199311) queue: receive queue value:199[0m
+[0;32mI (199311) bin: task D take binsem success[0m
+[0;32mI (200311) queue: receive queue value:200[0m
+[0;32mI (200311) bin: task D take binsem success[0m
+[0;32mI (201311) queue: receive queue value:201[0m
+[0;32mI (201311) bin: task D take binsem success[0m
+[0;32mI (202311) queue: receive queue value:202[0m
+[0;32mI (202311) bin: task D take binsem success[0m
+[0;32mI (203311) queue: receive queue value:203[0m
+[0;32mI (203311) bin: task D take binsem success[0m
+[0;32mI (204311) queue: receive queue value:204[0m
+[0;32mI (204311) bin: task D take binsem success[0m
+[0;32mI (205311) queue: receive queue value:205[0m
+[0;32mI (205311) bin: task D take binsem success[0m
+[0;32mI (206311) queue: receive queue value:206[0m
+[0;32mI (206311) bin: task D take binsem success[0m
+[0;32mI (207311) queue: receive queue value:207[0m
+[0;32mI (207311) bin: task D take binsem success[0m
+[0;32mI (208311) queue: receive queue value:208[0m
+[0;32mI (208311) bin: task D take binsem success[0m
+[0;32mI (209311) queue: receive queue value:209[0m
+[0;32mI (209311) bin: task D take binsem success[0m
+[0;32mI (210311) queue: receive queue value:210[0m
+[0;32mI (210311) bin: task D take binsem success[0m
+[0;32mI (211311) queue: receive queue value:211[0m
+[0;32mI (211311) bin: task D take binsem success[0m
+[0;32mI (212311) queue: receive queue value:212[0m
+[0;32mI (212311) bin: task D take binsem success[0m
+[0;32mI (213311) queue: receive queue value:213[0m
+[0;32mI (213311) bin: task D take binsem success[0m
+[0;32mI (214311) queue: receive queue value:214[0m
+[0;32mI (214311) bin: task D take binsem success[0m
+[0;32mI (215311) queue: receive queue value:215[0m
+[0;32mI (215311) bin: task D take binsem success[0m
+[0;32mI (216311) queue: receive queue value:216[0m
+[0;32mI (216311) bin: task D take binsem success[0m
+[0;32mI (217311) queue: receive queue value:217[0m
+[0;32mI (217311) bin: task D take binsem success[0m
+[0;32mI (218311) queue: receive queue value:218[0m
+[0;32mI (218311) bin: task D take binsem success[0m
+[0;32mI (219311) queue: receive queue value:219[0m
+[0;32mI (219311) bin: task D take binsem success[0m
+[0;32mI (220311) queue: receive queue value:220[0m
+[0;32mI (220311) bin: task D take binsem success[0m
+[0;32mI (221311) queue: receive queue value:221[0m
+[0;32mI (221311) bin: task D take binsem success[0m
+[0;32mI (222311) queue: receive queue value:222[0m
+[0;32mI (222311) bin: task D take binsem success[0m
+[0;32mI (223311) queue: receive queue value:223[0m
+[0;32mI (223311) bin: task D take binsem success[0m
+[0;32mI (224311) queue: receive queue value:224[0m
+[0;32mI (224311) bin: task D take binsem success[0m
+[0;32mI (225311) queue: receive queue value:225[0m
+[0;32mI (225311) bin: task D take binsem success[0m
+[0;32mI (226311) queue: receive queue value:226[0m
+[0;32mI (226311) bin: task D take binsem success[0m
+[0;32mI (227311) queue: receive queue value:227[0m
+[0;32mI (227311) bin: task D take binsem success[0m
+[0;32mI (228311) queue: receive queue value:228[0m
+[0;32mI (228311) bin: task D take binsem success[0m
+[0;32mI (229311) queue: receive queue value:229[0m
+[0;32mI (229311) bin: task D take binsem success[0m
+[0;32mI (230311) queue: receive queue value:230[0m
+[0;32mI (230311) bin: task D take binsem success[0m
+[0;32mI (231311) queue: receive queue value:231[0m
+[0;32mI (231311) bin: task D take binsem success[0m
+[0;32mI (232311) queue: receive queue value:232[0m
+[0;32mI (232311) bin: task D take binsem success[0m
+[0;32mI (233311) queue: receive queue value:233[0m
+[0;32mI (233311) bin: task D take binsem success[0m
+[0;32mI (234311) queue: receive queue value:234[0m
+[0;32mI (234311) bin: task D take binsem success[0m
+[0;32mI (235311) queue: receive queue value:235[0m
+[0;32mI (235311) bin: task D take binsem success[0m
+[0;32mI (236311) queue: receive queue value:236[0m
+[0;32mI (236311) bin: task D take binsem success[0m
+[0;32mI (237311) queue: receive queue value:237[0m
+[0;32mI (237311) bin: task D take binsem success[0m
+[0;32mI (238311) queue: receive queue value:238[0m
+[0;32mI (238311) bin: task D take binsem success[0m
+[0;32mI (239311) queue: receive queue value:239[0m
+[0;32mI (239311) bin: task D take binsem success[0m
+[0;32mI (240311) queue: receive queue value:240[0m
+[0;32mI (240311) bin: task D take binsem success[0m
+[0;32mI (241311) queue: receive queue value:241[0m
+[0;32mI (241311) bin: task D take binsem success[0m
+[0;32mI (242311) queue: receive queue value:242[0m
+[0;32mI (242311) bin: task D take binsem success[0m
+[0;32mI (243311) queue: receive queue value:243[0m
+[0;32mI (243311) bin: task D take binsem success[0m
+[0;32mI (244311) queue: receive queue value:244[0m
+[0;32mI (244311) bin: task D take binsem success[0m
+[0;32mI (245311) queue: receive queue value:245[0m
+[0;32mI (245311) bin: task D take binsem success[0m
+[0;32mI (246311) queue: receive queue value:246[0m
+[0;32mI (246311) bin: task D take binsem success[0m
+[0;32mI (247311) queue: receive queue value:247[0m
+[0;32mI (247311) bin: task D take binsem success[0m
+[0;32mI (248311) queue: receive queue value:248[0m
+[0;32mI (248311) bin: task D take binsem success[0m
+[0;32mI (249311) queue: receive queue value:249[0m
+[0;32mI (249311) bin: task D take binsem success[0m
+[0;32mI (250311) queue: receive queue value:250[0m
+[0;32mI (250311) bin: task D take binsem success[0m
+[0;32mI (251311) queue: receive queue value:251[0m
+[0;32mI (251311) bin: task D take binsem success[0m
+[0;32mI (252311) queue: receive queue value:252[0m
+[0;32mI (252311) bin: task D take binsem success[0m
+[0;32mI (253311) queue: receive queue value:253[0m
+[0;32mI (253311) bin: task D take binsem success[0m
+[0;32mI (254311) queue: receive queue value:254[0m
+[0;32mI (254311) bin: task D take binsem success[0m
+[0;32mI (255311) queue: receive queue value:255[0m
+[0;32mI (255311) bin: task D take binsem success[0m
+[0;32mI (256311) queue: receive queue value:256[0m
+[0;32mI (256311) bin: task D take binsem success[0m
+[0;32mI (257311) queue: receive queue value:257[0m
+[0;32mI (257311) bin: task D take binsem success[0m
+[0;32mI (258311) queue: receive queue value:258[0m
+[0;32mI (258311) bin: task D take binsem success[0m
+[0;32mI (259311) queue: receive queue value:259[0m
+[0;32mI (259311) bin: task D take binsem success[0m
+[0;32mI (260311) queue: receive queue value:260[0m
+[0;32mI (260311) bin: task D take binsem success[0m
+[0;32mI (261311) queue: receive queue value:261[0m
+[0;32mI (261311) bin: task D take binsem success[0m
+[0;32mI (262311) queue: receive queue value:262[0m
+[0;32mI (262311) bin: task D take binsem success[0m
+[0;32mI (263311) queue: receive queue value:263[0m
+[0;32mI (263311) bin: task D take binsem success[0m
+[0;32mI (264311) queue: receive queue value:264[0m
+[0;32mI (264311) bin: task D take binsem success[0m
+[0;32mI (265311) queue: receive queue value:265[0m
+[0;32mI (265311) bin: task D take binsem success[0m
+[0;32mI (266311) queue: receive queue value:266[0m
+[0;32mI (266311) bin: task D take binsem success[0m
+[0;32mI (267311) queue: receive queue value:267[0m
+[0;32mI (267311) bin: task D take binsem success[0m
+[0;32mI (268311) queue: receive queue value:268[0m
+[0;32mI (268311) bin: task D take binsem success[0m
+[0;32mI (269311) queue: receive queue value:269[0m
+[0;32mI (269311) bin: task D take binsem success[0m
+[0;32mI (270311) queue: receive queue value:270[0m
+[0;32mI (270311) bin: task D take binsem success[0m
+[0;32mI (271311) queue: receive queue value:271[0m
+[0;32mI (271311) bin: task D take binsem success[0m
+[0;32mI (272311) queue: receive queue value:272[0m
+[0;32mI (272311) bin: task D take binsem success[0m
+[0;32mI (273311) queue: receive queue value:273[0m
+[0;32mI (273311) bin: task D take binsem success[0m
+[0;32mI (274311) queue: receive queue value:274[0m
+[0;32mI (274311) bin: task D take binsem success[0m
+[0;32mI (275311) queue: receive queue value:275[0m
+[0;32mI (275311) bin: task D take binsem success[0m
+[0;32mI (276311) queue: receive queue value:276[0m
+[0;32mI (276311) bin: task D take binsem success[0m
+[0;32mI (277311) queue: receive queue value:277[0m
+[0;32mI (277311) bin: task D take binsem success[0m
+[0;32mI (278311) queue: receive queue value:278[0m
+[0;32mI (278311) bin: task D take binsem success[0m
+[0;32mI (279311) queue: receive queue value:279[0m
+[0;32mI (279311) bin: task D take binsem success[0m
+[0;32mI (280311) queue: receive queue value:280[0m
+[0;32mI (280311) bin: task D take binsem success[0m
+[0;32mI (281311) queue: receive queue value:281[0m
+[0;32mI (281311) bin: task D take binsem success[0m
+[0;32mI (282311) queue: receive queue value:282[0m
+[0;32mI (282311) bin: task D take binsem success[0m
+[0;32mI (283311) queue: receive queue value:283[0m
+[0;32mI (283311) bin: task D take binsem success[0m
+[0;32mI (284311) queue: receive queue value:284[0m
+[0;32mI (284311) bin: task D take binsem success[0m
+[0;32mI (285311) queue: receive queue value:285[0m
+[0;32mI (285311) bin: task D take binsem success[0m
+[0;32mI (286311) queue: receive queue value:286[0m
+[0;32mI (286311) bin: task D take binsem success[0m
+[0;32mI (287311) queue: receive queue value:287[0m
+[0;32mI (287311) bin: task D take binsem success[0m
+[0;32mI (288311) queue: receive queue value:288[0m
+[0;32mI (288311) bin: task D take binsem success[0m
+[0;32mI (289311) queue: receive queue value:289[0m
+[0;32mI (289311) bin: task D take binsem success[0m
+[0;32mI (290311) queue: receive queue value:290[0m
+[0;32mI (290311) bin: task D take binsem success[0m
+[0;32mI (291311) queue: receive queue value:291[0m
+[0;32mI (291311) bin: task D take binsem success[0m
+[0;32mI (292311) queue: receive queue value:292[0m
+[0;32mI (292311) bin: task D take binsem success[0m
+[0;32mI (293311) queue: receive queue value:293[0m
+[0;32mI (293311) bin: task D take binsem success[0m
+[0;32mI (294311) queue: receive queue value:294[0m
+[0;32mI (294311) bin: task D take binsem success[0m
+[0;32mI (295311) queue: receive queue value:295[0m
+[0;32mI (295311) bin: task D take binsem success[0m
+[0;32mI (296311) queue: receive queue value:296[0m
+[0;32mI (296311) bin: task D take binsem success[0m
+[0;32mI (297311) queue: receive queue value:297[0m
+[0;32mI (297311) bin: task D take binsem success[0m
+[0;32mI (298311) queue: receive queue value:298[0m
+[0;32mI (298311) bin: task D take binsem success[0m
+[0;32mI (299311) queue: receive queue value:299[0m
+[0;32mI (299311) bin: task D take binsem success[0m
+[0;32mI (300311) queue: receive queue value:300[0m
+[0;32mI (300311) bin: task D take binsem success[0m
+[0;32mI (301311) queue: receive queue value:301[0m
+[0;32mI (301311) bin: task D take binsem success[0m
+[0;32mI (302311) queue: receive queue value:302[0m
+[0;32mI (302311) bin: task D take binsem success[0m
+[0;32mI (303311) queue: receive queue value:303[0m
+[0;32mI (303311) bin: task D take binsem success[0m
+[0;32mI (304311) queue: receive queue value:304[0m
+[0;32mI (304311) bin: task D take binsem success[0m
+[0;32mI (305311) queue: receive queue value:305[0m
+[0;32mI (305311) bin: task D take binsem success[0m
+[0;32mI (306311) queue: receive queue value:306[0m
+[0;32mI (306311) bin: task D take binsem success[0m
+[0;32mI (307311) queue: receive queue value:307[0m
+[0;32mI (307311) bin: task D take binsem success[0m
+[0;32mI (308311) queue: receive queue value:308[0m
+[0;32mI (308311) bin: task D take binsem success[0m
+[0;32mI (309311) queue: receive queue value:309[0m
+[0;32mI (309311) bin: task D take binsem success[0m
+[0;32mI (310311) queue: receive queue value:310[0m
+[0;32mI (310311) bin: task D take binsem success[0m
+[0;32mI (311311) queue: receive queue value:311[0m
+[0;32mI (311311) bin: task D take binsem success[0m
+[0;32mI (312311) queue: receive queue value:312[0m
+[0;32mI (312311) bin: task D take binsem success[0m
+[0;32mI (313311) queue: receive queue value:313[0m
+[0;32mI (313311) bin: task D take binsem success[0m
+[0;32mI (314311) queue: receive queue value:314[0m
+[0;32mI (314311) bin: task D take binsem success[0m
+[0;32mI (315311) queue: receive queue value:315[0m
+[0;32mI (315311) bin: task D take binsem success[0m
+[0;32mI (316311) queue: receive queue value:316[0m
+[0;32mI (316311) bin: task D take binsem success[0m
+[0;32mI (317311) queue: receive queue value:317[0m
+[0;32mI (317311) bin: task D take binsem success[0m
+[0;32mI (318311) queue: receive queue value:318[0m
+[0;32mI (318311) bin: task D take binsem success[0m
+[0;32mI (319311) queue: receive queue value:319[0m
+[0;32mI (319311) bin: task D take binsem success[0m
+[0;32mI (320311) queue: receive queue value:320[0m
+[0;32mI (320311) bin: task D take binsem success[0m
+[0;32mI (321311) queue: receive queue value:321[0m
+[0;32mI (321311) bin: task D take binsem success[0m
+[0;32mI (322311) queue: receive queue value:322[0m
+[0;32mI (322311) bin: task D take binsem success[0m
+[0;32mI (323311) queue: receive queue value:323[0m
+[0;32mI (323311) bin: task D take binsem success[0m
+[0;32mI (324311) queue: receive queue value:324[0m
+[0;32mI (324311) bin: task D take binsem success[0m
+[0;32mI (325311) queue: receive queue value:325[0m
+[0;32mI (325311) bin: task D take binsem success[0m
+[0;32mI (326311) queue: receive queue value:326[0m
+[0;32mI (326311) bin: task D take binsem success[0m
+[0;32mI (327311) queue: receive queue value:327[0m
+[0;32mI (327311) bin: task D take binsem success[0m
+[0;32mI (328311) queue: receive queue value:328[0m
+[0;32mI (328311) bin: task D take binsem success[0m
+[0;32mI (329311) queue: receive queue value:329[0m
+[0;32mI (329311) bin: task D take binsem success[0m
+[0;32mI (330311) queue: receive queue value:330[0m
+[0;32mI (330311) bin: task D take binsem success[0m
+[0;32mI (331311) queue: receive queue value:331[0m
+[0;32mI (331311) bin: task D take binsem success[0m
+[0;32mI (332311) queue: receive queue value:332[0m
+[0;32mI (332311) bin: task D take binsem success[0m
+[0;32mI (333311) queue: receive queue value:333[0m
+[0;32mI (333311) bin: task D take binsem success[0m
+[0;32mI (334311) queue: receive queue value:334[0m
+[0;32mI (334311) bin: task D take binsem success[0m
+[0;32mI (335311) queue: receive queue value:335[0m
+[0;32mI (335311) bin: task D take binsem success[0m
+[0;32mI (336311) queue: receive queue value:336[0m
+[0;32mI (336311) bin: task D take binsem success[0m
+[0;32mI (337311) queue: receive queue value:337[0m
+[0;32mI (337311) bin: task D take binsem success[0m
+[0;32mI (338311) queue: receive queue value:338[0m
+[0;32mI (338311) bin: task D take binsem success[0m
+[0;32mI (339311) queue: receive queue value:339[0m
+[0;32mI (339311) bin: task D take binsem success[0m
+[0;32mI (340311) queue: receive queue value:340[0m
+[0;32mI (340311) bin: task D take binsem success[0m
+[0;32mI (341311) queue: receive queue value:341[0m
+[0;32mI (341311) bin: task D take binsem success[0m
+[0;32mI (342311) queue: receive queue value:342[0m
+[0;32mI (342311) bin: task D take binsem success[0m
+[0;32mI (343311) queue: receive queue value:343[0m
+[0;32mI (343311) bin: task D take binsem success[0m
+[0;32mI (344311) queue: receive queue value:344[0m
+[0;32mI (344311) bin: task D take binsem success[0m
+[0;32mI (345311) queue: receive queue value:345[0m
+[0;32mI (345311) bin: task D take binsem success[0m
+[0;32mI (346311) queue: receive queue value:346[0m
+[0;32mI (346311) bin: task D take binsem success[0m
+[0;32mI (347311) queue: receive queue value:347[0m
+[0;32mI (347311) bin: task D take binsem success[0m
+[0;32mI (348311) queue: receive queue value:348[0m
+[0;32mI (348311) bin: task D take binsem success[0m
+[0;32mI (349311) queue: receive queue value:349[0m
+[0;32mI (349311) bin: task D take binsem success[0m
+[0;32mI (350311) queue: receive queue value:350[0m
+[0;32mI (350311) bin: task D take binsem success[0m
+[0;32mI (351311) queue: receive queue value:351[0m
+[0;32mI (351311) bin: task D take binsem success[0m
+[0;32mI (352311) queue: receive queue value:352[0m
+[0;32mI (352311) bin: task D take binsem success[0m
+[0;32mI (353311) queue: receive queue value:353[0m
+[0;32mI (353311) bin: task D take binsem success[0m
+[0;32mI (354311) queue: receive queue value:354[0m
+[0;32mI (354311) bin: task D take binsem success[0m
+[0;32mI (355311) queue: receive queue value:355[0m
+[0;32mI (355311) bin: task D take binsem success[0m
+[0;32mI (356311) queue: receive queue value:356[0m
+[0;32mI (356311) bin: task D take binsem success[0m
+[0;32mI (357311) queue: receive queue value:357[0m
+[0;32mI (357311) bin: task D take binsem success[0m
+[0;32mI (358311) queue: receive queue value:358[0m
+[0;32mI (358311) bin: task D take binsem success[0m
+[0;32mI (359311) queue: receive queue value:359[0m
+[0;32mI (359311) bin: task D take binsem success[0m
+[0;32mI (360311) queue: receive queue value:360[0m
+[0;32mI (360311) bin: task D take binsem success[0m
+[0;32mI (361311) queue: receive queue value:361[0m
+[0;32mI (361311) bin: task D take binsem success[0m
+[0;32mI (362311) queue: receive queue value:362[0m
+[0;32mI (362311) bin: task D take binsem success[0m
+[0;32mI (363311) queue: receive queue value:363[0m
+[0;32mI (363311) bin: task D take binsem success[0m
+[0;32mI (364311) queue: receive queue value:364[0m
+[0;32mI (364311) bin: task D take binsem success[0m
+[0;32mI (365311) queue: receive queue value:365[0m
+[0;32mI (365311) bin: task D take binsem success[0m
+[0;32mI (366311) queue: receive queue value:366[0m
+[0;32mI (366311) bin: task D take binsem success[0m
+[0;32mI (367311) queue: receive queue value:367[0m
+[0;32mI (367311) bin: task D take binsem success[0m
+[0;32mI (368311) queue: receive queue value:368[0m
+[0;32mI (368311) bin: task D take binsem success[0m
+[0;32mI (369311) queue: receive queue value:369[0m
+[0;32mI (369311) bin: task D take binsem success[0m
+[0;32mI (370311) queue: receive queue value:370[0m
+[0;32mI (370311) bin: task D take binsem success[0m
+[0;32mI (371311) queue: receive queue value:371[0m
+[0;32mI (371311) bin: task D take binsem success[0m
+[0;32mI (372311) queue: receive queue value:372[0m
+[0;32mI (372311) bin: task D take binsem success[0m
+[0;32mI (373311) queue: receive queue value:373[0m
+[0;32mI (373311) bin: task D take binsem success[0m
+[0;32mI (374311) queue: receive queue value:374[0m
+[0;32mI (374311) bin: task D take binsem success[0m
+[0;32mI (375311) queue: receive queue value:375[0m
+[0;32mI (375311) bin: task D take binsem success[0m
+[0;32mI (376311) queue: receive queue value:376[0m
+[0;32mI (376311) bin: task D take binsem success[0m
+[0;32mI (377311) queue: receive queue value:377[0m
+[0;32mI (377311) bin: task D take binsem success[0m
+[0;32mI (378311) queue: receive queue value:378[0m
+[0;32mI (378311) bin: task D take binsem success[0m
+[0;32mI (379311) queue: receive queue value:379[0m
+[0;32mI (379311) bin: task D take binsem success[0m
+[0;32mI (380311) queue: receive queue value:380[0m
+[0;32mI (380311) bin: task D take binsem success[0m
+[0;32mI (381311) queue: receive queue value:381[0m
+[0;32mI (381311) bin: task D take binsem success[0m
+[0;32mI (382311) queue: receive queue value:382[0m
+[0;32mI (382311) bin: task D take binsem success[0m
+[0;32mI (383311) queue: receive queue value:383[0m
+[0;32mI (383311) bin: task D take binsem success[0m
+[0;32mI (384311) queue: receive queue value:384[0m
+[0;32mI (384311) bin: task D take binsem success[0m
+[0;32mI (385311) queue: receive queue value:385[0m
+[0;32mI (385311) bin: task D take binsem success[0m
+[0;32mI (386311) queue: receive queue value:386[0m
+[0;32mI (386311) bin: task D take binsem success[0m
+[0;32mI (387311) queue: receive queue value:387[0m
+[0;32mI (387311) bin: task D take binsem success[0m
+[0;32mI (388311) queue: receive queue value:388[0m
+[0;32mI (388311) bin: task D take binsem success[0m
+[0;32mI (389311) queue: receive queue value:389[0m
+[0;32mI (389311) bin: task D take binsem success[0m
+[0;32mI (390311) queue: receive queue value:390[0m
+[0;32mI (390311) bin: task D take binsem success[0m
+[0;32mI (391311) queue: receive queue value:391[0m
+[0;32mI (391311) bin: task D take binsem success[0m
+[0;32mI (392311) queue: receive queue value:392[0m
+[0;32mI (392311) bin: task D take binsem success[0m
+[0;32mI (393311) queue: receive queue value:393[0m
+[0;32mI (393311) bin: task D take binsem success[0m
+[0;32mI (394311) queue: receive queue value:394[0m
+[0;32mI (394311) bin: task D take binsem success[0m
+[0;32mI (395311) queue: receive queue value:395[0m
+[0;32mI (395311) bin: task D take binsem success[0m
+[0;32mI (396311) queue: receive queue value:396[0m
+[0;32mI (396311) bin: task D take binsem success[0m
+[0;32mI (397311) queue: receive queue value:397[0m
+[0;32mI (397311) bin: task D take binsem success[0m
+[0;32mI (398311) queue: receive queue value:398[0m
+[0;32mI (398311) bin: task D take binsem success[0m
+[0;32mI (399311) queue: receive queue value:399[0m
+[0;32mI (399311) bin: task D take binsem success[0m
+[0;32mI (400311) queue: receive queue value:400[0m
+[0;32mI (400311) bin: task D take binsem success[0m
+[0;32mI (401311) queue: receive queue value:401[0m
+[0;32mI (401311) bin: task D take binsem success[0m
+[0;32mI (402311) queue: receive queue value:402[0m
+[0;32mI (402311) bin: task D take binsem success[0m
+[0;32mI (403311) queue: receive queue value:403[0m
+[0;32mI (403311) bin: task D take binsem success[0m
+[0;32mI (404311) queue: receive queue value:404[0m
+[0;32mI (404311) bin: task D take binsem success[0m
+[0;32mI (405311) queue: receive queue value:405[0m
+[0;32mI (405311) bin: task D take binsem success[0m
+[0;32mI (406311) queue: receive queue value:406[0m
+[0;32mI (406311) bin: task D take binsem success[0m
+[0;32mI (407311) queue: receive queue value:407[0m
+[0;32mI (407311) bin: task D take binsem success[0m
+[0;32mI (408311) queue: receive queue value:408[0m
+[0;32mI (408311) bin: task D take binsem success[0m
+[0;32mI (409311) queue: receive queue value:409[0m
+[0;32mI (409311) bin: task D take binsem success[0m
+[0;32mI (410311) queue: receive queue value:410[0m
+[0;32mI (410311) bin: task D take binsem success[0m
+[0;32mI (411311) queue: receive queue value:411[0m
+[0;32mI (411311) bin: task D take binsem success[0m
+[0;32mI (412311) queue: receive queue value:412[0m
+[0;32mI (412311) bin: task D take binsem success[0m
+[0;32mI (413311) queue: receive queue value:413[0m
+[0;32mI (413311) bin: task D take binsem success[0m
+[0;32mI (414311) queue: receive queue value:414[0m
+[0;32mI (414311) bin: task D take binsem success[0m
+[0;32mI (415311) queue: receive queue value:415[0m
+[0;32mI (415311) bin: task D take binsem success[0m
+[0;32mI (416311) queue: receive queue value:416[0m
+[0;32mI (416311) bin: task D take binsem success[0m
+[0;32mI (417311) queue: receive queue value:417[0m
+[0;32mI (417311) bin: task D take binsem success[0m
+[0;32mI (418311) queue: receive queue value:418[0m
+[0;32mI (418311) bin: task D take binsem success[0m
+[0;32mI (419311) queue: receive queue value:419[0m
+[0;32mI (419311) bin: task D take binsem success[0m
+[0;32mI (420311) queue: receive queue value:420[0m
+[0;32mI (420311) bin: task D take binsem success[0m
+[0;32mI (421311) queue: receive queue value:421[0m
+[0;32mI (421311) bin: task D take binsem success[0m
+[0;32mI (422311) queue: receive queue value:422[0m
+[0;32mI (422311) bin: task D take binsem success[0m
+[0;32mI (423311) queue: receive queue value:423[0m
+[0;32mI (423311) bin: task D take binsem success[0m
+[0;32mI (424311) queue: receive queue value:424[0m
+[0;32mI (424311) bin: task D take binsem success[0m
+[0;32mI (425311) queue: receive queue value:425[0m
+[0;32mI (425311) bin: task D take binsem success[0m
+[0;32mI (426311) queue: receive queue value:426[0m
+[0;32mI (426311) bin: task D take binsem success[0m
+[0;32mI (427311) queue: receive queue value:427[0m
+[0;32mI (427311) bin: task D take binsem success[0m
+[0;32mI (428311) queue: receive queue value:428[0m
+[0;32mI (428311) bin: task D take binsem success[0m
+[0;32mI (429311) queue: receive queue value:429[0m
+[0;32mI (429311) bin: task D take binsem success[0m
+[0;32mI (430311) queue: receive queue value:430[0m
+[0;32mI (430311) bin: task D take binsem success[0m
+[0;32mI (431311) queue: receive queue value:431[0m
+[0;32mI (431311) bin: task D take binsem success[0m
+[0;32mI (432311) queue: receive queue value:432[0m
+[0;32mI (432311) bin: task D take binsem success[0m
+[0;32mI (433311) queue: receive queue value:433[0m
+[0;32mI (433311) bin: task D take binsem success[0m
+[0;32mI (434311) queue: receive queue value:434[0m
+[0;32mI (434311) bin: task D take binsem success[0m
+[0;32mI (435311) queue: receive queue value:435[0m
+[0;32mI (435311) bin: task D take binsem success[0m
+[0;32mI (436311) queue: receive queue value:436[0m
+[0;32mI (436311) bin: task D take binsem success[0m
+[0;32mI (437311) queue: receive queue value:437[0m
+[0;32mI (437311) bin: task D take binsem success[0m
+[0;32mI (438311) queue: receive queue value:438[0m
+[0;32mI (438311) bin: task D take binsem success[0m
+[0;32mI (439311) queue: receive queue value:439[0m
+[0;32mI (439311) bin: task D take binsem success[0m
+[0;32mI (440311) queue: receive queue value:440[0m
+[0;32mI (440311) bin: task D take binsem success[0m
+[0;32mI (441311) queue: receive queue value:441[0m
+[0;32mI (441311) bin: task D take binsem success[0m
+[0;32mI (442311) queue: receive queue value:442[0m
+[0;32mI (442311) bin: task D take binsem success[0m
+[0;32mI (443311) queue: receive queue value:443[0m
+[0;32mI (443311) bin: task D take binsem success[0m
+[0;32mI (444311) queue: receive queue value:444[0m
+[0;32mI (444311) bin: task D take binsem success[0m
+[0;32mI (445311) queue: receive queue value:445[0m
+[0;32mI (445311) bin: task D take binsem success[0m
+[0;32mI (446311) queue: receive queue value:446[0m
+[0;32mI (446311) bin: task D take binsem success[0m
+[0;32mI (447311) queue: receive queue value:447[0m
+[0;32mI (447311) bin: task D take binsem success[0m
+[0;32mI (448311) queue: receive queue value:448[0m
+[0;32mI (448311) bin: task D take binsem success[0m
+[0;32mI (449311) queue: receive queue value:449[0m
+[0;32mI (449311) bin: task D take binsem success[0m
+[0;32mI (450311) queue: receive queue value:450[0m
+[0;32mI (450311) bin: task D take binsem success[0m
+[0;32mI (451311) queue: receive queue value:451[0m
+[0;32mI (451311) bin: task D take binsem success[0m
+[0;32mI (452311) queue: receive queue value:452[0m
+[0;32mI (452311) bin: task D take binsem success[0m
+[0;32mI (453311) queue: receive queue value:453[0m
+[0;32mI (453311) bin: task D take binsem success[0m
+[0;32mI (454311) queue: receive queue value:454[0m
+[0;32mI (454311) bin: task D take binsem success[0m
+[0;32mI (455311) queue: receive queue value:455[0m
+[0;32mI (455311) bin: task D take binsem success[0m
+[0;32mI (456311) queue: receive queue value:456[0m
+[0;32mI (456311) bin: task D take binsem success[0m
+[0;32mI (457311) queue: receive queue value:457[0m
+[0;32mI (457311) bin: task D take binsem success[0m
+[0;32mI (458311) queue: receive queue value:458[0m
+[0;32mI (458311) bin: task D take binsem success[0m
+[0;32mI (459311) queue: receive queue value:459[0m
+[0;32mI (459311) bin: task D take binsem success[0m
+[0;32mI (460311) queue: receive queue value:460[0m
+[0;32mI (460311) bin: task D take binsem success[0m
+[0;32mI (461311) queue: receive queue value:461[0m
+[0;32mI (461311) bin: task D take binsem success[0m
+[0;32mI (462311) queue: receive queue value:462[0m
+[0;32mI (462311) bin: task D take binsem success[0m
+[0;32mI (463311) queue: receive queue value:463[0m
+[0;32mI (463311) bin: task D take binsem success[0m
+[0;32mI (464311) queue: receive queue value:464[0m
+[0;32mI (464311) bin: task D take binsem success[0m
+[0;32mI (465311) queue: receive queue value:465[0m
+[0;32mI (465311) bin: task D take binsem success[0m
+[0;32mI (466311) queue: receive queue value:466[0m
+[0;32mI (466311) bin: task D take binsem success[0m
+[0;32mI (467311) queue: receive queue value:467[0m
+[0;32mI (467311) bin: task D take binsem success[0m
+[0;32mI (468311) queue: receive queue value:468[0m
+[0;32mI (468311) bin: task D take binsem success[0m
+[0;32mI (469311) queue: receive queue value:469[0m
+[0;32mI (469311) bin: task D take binsem success[0m
+[0;32mI (470311) queue: receive queue value:470[0m
+[0;32mI (470311) bin: task D take binsem success[0m
+[0;32mI (471311) queue: receive queue value:471[0m
+[0;32mI (471311) bin: task D take binsem success[0m
+[0;32mI (472311) queue: receive queue value:472[0m
+[0;32mI (472311) bin: task D take binsem success[0m
+[0;32mI (473311) queue: receive queue value:473[0m
+[0;32mI (473311) bin: task D take binsem success[0m
+[0;32mI (474311) queue: receive queue value:474[0m
+[0;32mI (474311) bin: task D take binsem success[0m
+[0;32mI (475311) queue: receive queue value:475[0m
+[0;32mI (475311) bin: task D take binsem success[0m
+[0;32mI (476311) queue: receive queue value:476[0m
+[0;32mI (476311) bin: task D take binsem success[0m
+[0;32mI (477311) queue: receive queue value:477[0m
+[0;32mI (477311) bin: task D take binsem success[0m
+[0;32mI (478311) queue: receive queue value:478[0m
+[0;32mI (478311) bin: task D take binsem success[0m
+[0;32mI (479311) queue: receive queue value:479[0m
+[0;32mI (479311) bin: task D take binsem success[0m
+[0;32mI (480311) queue: receive queue value:480[0m
+[0;32mI (480311) bin: task D take binsem success[0m
+[0;32mI (481311) queue: receive queue value:481[0m
+[0;32mI (481311) bin: task D take binsem success[0m
+[0;32mI (482311) queue: receive queue value:482[0m
+[0;32mI (482311) bin: task D take binsem success[0m
+[0;32mI (483311) queue: receive queue value:483[0m
+[0;32mI (483311) bin: task D take binsem success[0m
+[0;32mI (484311) queue: receive queue value:484[0m
+[0;32mI (484311) bin: task D take binsem success[0m
+[0;32mI (485311) queue: receive queue value:485[0m
+[0;32mI (485311) bin: task D take binsem success[0m
+[0;32mI (486311) queue: receive queue value:486[0m
+[0;32mI (486311) bin: task D take binsem success[0m
+[0;32mI (487311) queue: receive queue value:487[0m
+[0;32mI (487311) bin: task D take binsem success[0m
+[0;32mI (488311) queue: receive queue value:488[0m
+[0;32mI (488311) bin: task D take binsem success[0m
+[0;32mI (489311) queue: receive queue value:489[0m
+[0;32mI (489311) bin: task D take binsem success[0m
+[0;32mI (490311) queue: receive queue value:490[0m
+[0;32mI (490311) bin: task D take binsem success[0m
+[0;32mI (491311) queue: receive queue value:491[0m
+[0;32mI (491311) bin: task D take binsem success[0m
+[0;32mI (492311) queue: receive queue value:492[0m
+[0;32mI (492311) bin: task D take binsem success[0m
+[0;32mI (493311) queue: receive queue value:493[0m
+[0;32mI (493311) bin: task D take binsem success[0m
+[0;32mI (494311) queue: receive queue value:494[0m
+[0;32mI (494311) bin: task D take binsem success[0m
+[0;32mI (495311) queue: receive queue value:495[0m
+[0;32mI (495311) bin: task D take binsem success[0m
+[0;32mI (496311) queue: receive queue value:496[0m
+[0;32mI (496311) bin: task D take binsem success[0m
+[0;32mI (497311) queue: receive queue value:497[0m
+[0;32mI (497311) bin: task D take binsem success[0m
+[0;32mI (498311) queue: receive queue value:498[0m
+[0;32mI (498311) bin: task D take binsem success[0m
+[0;32mI (499311) queue: receive queue value:499[0m
+[0;32mI (499311) bin: task D take binsem success[0m
+[0;32mI (500311) queue: receive queue value:500[0m
+[0;32mI (500311) bin: task D take binsem success[0m
+[0;32mI (501311) queue: receive queue value:501[0m
+[0;32mI (501311) bin: task D take binsem success[0m
+[0;32mI (502311) queue: receive queue value:502[0m
+[0;32mI (502311) bin: task D take binsem success[0m
+[0;32mI (503311) queue: receive queue value:503[0m
+[0;32mI (503311) bin: task D take binsem success[0m
+[0;32mI (504311) queue: receive queue value:504[0m
+[0;32mI (504311) bin: task D take binsem success[0m
+[0;32mI (505311) queue: receive queue value:505[0m
+[0;32mI (505311) bin: task D take binsem success[0m
+[0;32mI (506311) queue: receive queue value:506[0m
+[0;32mI (506311) bin: task D take binsem success[0m
+[0;32mI (507311) queue: receive queue value:507[0m
+[0;32mI (507311) bin: task D take binsem success[0m
+[0;32mI (508311) queue: receive queue value:508[0m
+[0;32mI (508311) bin: task D take binsem success[0m
+[0;32mI (509311) queue: receive queue value:509[0m
+[0;32mI (509311) bin: task D take binsem success[0m
+[0;32mI (510311) queue: receive queue value:510[0m
+[0;32mI (510311) bin: task D take binsem success[0m
+[0;32mI (511311) queue: receive queue value:511[0m
+[0;32mI (511311) bin: task D take binsem success[0m
+[0;32mI (512311) queue: receive queue value:512[0m
+[0;32mI (512311) bin: task D take binsem success[0m
+[0;32mI (513311) queue: receive queue value:513[0m
+[0;32mI (513311) bin: task D take binsem success[0m
+[0;32mI (514311) queue: receive queue value:514[0m
+[0;32mI (514311) bin: task D take binsem success[0m
+[0;32mI (515311) queue: receive queue value:515[0m
+[0;32mI (515311) bin: task D take binsem success[0m
+[0;32mI (516311) queue: receive queue value:516[0m
+[0;32mI (516311) bin: task D take binsem success[0m
+[0;32mI (517311) queue: receive queue value:517[0m
+[0;32mI (517311) bin: task D take binsem success[0m
+[0;32mI (518311) queue: receive queue value:518[0m
+[0;32mI (518311) bin: task D take binsem success[0m
+[0;32mI (519311) queue: receive queue value:519[0m
+[0;32mI (519311) bin: task D take binsem success[0m
+[0;32mI (520311) queue: receive queue value:520[0m
+[0;32mI (520311) bin: task D take binsem success[0m
+[0;32mI (521311) queue: receive queue value:521[0m
+[0;32mI (521311) bin: task D take binsem success[0m
+[0;32mI (522311) queue: receive queue value:522[0m
+[0;32mI (522311) bin: task D take binsem success[0m
+[0;32mI (523311) queue: receive queue value:523[0m
+[0;32mI (523311) bin: task D take binsem success[0m
+[0;32mI (524311) queue: receive queue value:524[0m
+[0;32mI (524311) bin: task D take binsem success[0m
+[0;32mI (525311) queue: receive queue value:525[0m
+[0;32mI (525311) bin: task D take binsem success[0m
+[0;32mI (526311) queue: receive queue value:526[0m
+[0;32mI (526311) bin: task D take binsem success[0m
+[0;32mI (527311) queue: receive queue value:527[0m
+[0;32mI (527311) bin: task D take binsem success[0m
+[0;32mI (528311) queue: receive queue value:528[0m
+[0;32mI (528311) bin: task D take binsem success[0m
+[0;32mI (529311) queue: receive queue value:529[0m
+[0;32mI (529311) bin: task D take binsem success[0m
+[0;32mI (530311) queue: receive queue value:530[0m
+[0;32mI (530311) bin: task D take binsem success[0m
+[0;32mI (531311) queue: receive queue value:531[0m
+[0;32mI (531311) bin: task D take binsem success[0m
+[0;32mI (532311) queue: receive queue value:532[0m
+[0;32mI (532311) bin: task D take binsem success[0m
+[0;32mI (533311) queue: receive queue value:533[0m
+[0;32mI (533311) bin: task D take binsem success[0m
+[0;32mI (534311) queue: receive queue value:534[0m
+[0;32mI (534311) bin: task D take binsem success[0m
+[0;32mI (535311) queue: receive queue value:535[0m
+[0;32mI (535311) bin: task D take binsem success[0m
+[0;32mI (536311) queue: receive queue value:536[0m
+[0;32mI (536311) bin: task D take binsem success[0m
+[0;32mI (537311) queue: receive queue value:537[0m
+[0;32mI (537311) bin: task D take binsem success[0m
+[0;32mI (538311) queue: receive queue value:538[0m
+[0;32mI (538311) bin: task D take binsem success[0m
+[0;32mI (539311) queue: receive queue value:539[0m
+[0;32mI (539311) bin: task D take binsem success[0m
+[0;32mI (540311) queue: receive queue value:540[0m
+[0;32mI (540311) bin: task D take binsem success[0m
+[0;32mI (541311) queue: receive queue value:541[0m
+[0;32mI (541311) bin: task D take binsem success[0m
+[0;32mI (542311) queue: receive queue value:542[0m
+[0;32mI (542311) bin: task D take binsem success[0m
+[0;32mI (543311) queue: receive queue value:543[0m
+[0;32mI (543311) bin: task D take binsem success[0m
+[0;32mI (544311) queue: receive queue value:544[0m
+[0;32mI (544311) bin: task D take binsem success[0m
+[0;32mI (545311) queue: receive queue value:545[0m
+[0;32mI (545311) bin: task D take binsem success[0m
+[0;32mI (546311) queue: receive queue value:546[0m
+[0;32mI (546311) bin: task D take binsem success[0m
+[0;32mI (547311) queue: receive queue value:547[0m
+[0;32mI (547311) bin: task D take binsem success[0m
+[0;32mI (548311) queue: receive queue value:548[0m
+[0;32mI (548311) bin: task D take binsem success[0m
+[0;32mI (549311) queue: receive queue value:549[0m
+[0;32mI (549311) bin: task D take binsem success[0m
+[0;32mI (550311) queue: receive queue value:550[0m
+[0;32mI (550311) bin: task D take binsem success[0m
+[0;32mI (551311) queue: receive queue value:551[0m
+[0;32mI (551311) bin: task D take binsem success[0m
+[0;32mI (552311) queue: receive queue value:552[0m
+[0;32mI (552311) bin: task D take binsem success[0m
+[0;32mI (553311) queue: receive queue value:553[0m
+[0;32mI (553311) bin: task D take binsem success[0m
+[0;32mI (554311) queue: receive queue value:554[0m
+[0;32mI (554311) bin: task D take binsem success[0m
+[0;32mI (555311) queue: receive queue value:555[0m
+[0;32mI (555311) bin: task D take binsem success[0m
+[0;32mI (556311) queue: receive queue value:556[0m
+[0;32mI (556311) bin: task D take binsem success[0m
+[0;32mI (557311) queue: receive queue value:557[0m
+[0;32mI (557311) bin: task D take binsem success[0m
+[0;32mI (558311) queue: receive queue value:558[0m
+[0;32mI (558311) bin: task D take binsem success[0m
+[0;32mI (559311) queue: receive queue value:559[0m
+[0;32mI (559311) bin: task D take binsem success[0m
+[0;32mI (560311) queue: receive queue value:560[0m
+[0;32mI (560311) bin: task D take binsem success[0m
+[0;32mI (561311) queue: receive queue value:561[0m
+[0;32mI (561311) bin: task D take binsem success[0m
+[0;32mI (562311) queue: receive queue value:562[0m
+[0;32mI (562311) bin: task D take binsem success[0m
+[0;32mI (563311) queue: receive queue value:563[0m
+[0;32mI (563311) bin: task D take binsem success[0m
+[0;32mI (564311) queue: receive queue value:564[0m
+[0;32mI (564311) bin: task D take binsem success[0m
+[0;32mI (565311) queue: receive queue value:565[0m
+[0;32mI (565311) bin: task D take binsem success[0m
+[0;32mI (566311) queue: receive queue value:566[0m
+[0;32mI (566311) bin: task D take binsem success[0m
+[0;32mI (567311) queue: receive queue value:567[0m
+[0;32mI (567311) bin: task D take binsem success[0m
+[0;32mI (568311) queue: receive queue value:568[0m
+[0;32mI (568311) bin: task D take binsem success[0m
+[0;32mI (569311) queue: receive queue value:569[0m
+[0;32mI (569311) bin: task D take binsem success[0m
+[0;32mI (570311) queue: receive queue value:570[0m
+[0;32mI (570311) bin: task D take binsem success[0m
+[0;32mI (571311) queue: receive queue value:571[0m
+[0;32mI (571311) bin: task D take binsem success[0m
+[0;32mI (572311) queue: receive queue value:572[0m
+[0;32mI (572311) bin: task D take binsem success[0m
+[0;32mI (573311) queue: receive queue value:573[0m
+[0;32mI (573311) bin: task D take binsem success[0m
+[0;32mI (574311) queue: receive queue value:574[0m
+[0;32mI (574311) bin: task D take binsem success[0m
+[0;32mI (575311) queue: receive queue value:575[0m
+[0;32mI (575311) bin: task D take binsem success[0m
+[0;32mI (576311) queue: receive queue value:576[0m
+[0;32mI (576311) bin: task D take binsem success[0m
+[0;32mI (577311) queue: receive queue value:577[0m
+[0;32mI (577311) bin: task D take binsem success[0m
+[0;32mI (578311) queue: receive queue value:578[0m
+[0;32mI (578311) bin: task D take binsem success[0m
+[0;32mI (579311) queue: receive queue value:579[0m
+[0;32mI (579311) bin: task D take binsem success[0m
+[0;32mI (580311) queue: receive queue value:580[0m
+[0;32mI (580311) bin: task D take binsem success[0m
+[0;32mI (581311) queue: receive queue value:581[0m
+[0;32mI (581311) bin: task D take binsem success[0m
+[0;32mI (582311) queue: receive queue value:582[0m
+[0;32mI (582311) bin: task D take binsem success[0m
+[0;32mI (583311) queue: receive queue value:583[0m
+[0;32mI (583311) bin: task D take binsem success[0m
+[0;32mI (584311) queue: receive queue value:584[0m
+[0;32mI (584311) bin: task D take binsem success[0m
+[0;32mI (585311) queue: receive queue value:585[0m
+[0;32mI (585311) bin: task D take binsem success[0m
+[0;32mI (586311) queue: receive queue value:586[0m
+[0;32mI (586311) bin: task D take binsem success[0m
+[0;32mI (587311) queue: receive queue value:587[0m
+[0;32mI (587311) bin: task D take binsem success[0m
+[0;32mI (588311) queue: receive queue value:588[0m
+[0;32mI (588311) bin: task D take binsem success[0m
+[0;32mI (589311) queue: receive queue value:589[0m
+[0;32mI (589311) bin: task D take binsem success[0m
+[0;32mI (590311) queue: receive queue value:590[0m
+[0;32mI (590311) bin: task D take binsem success[0m
+[0;32mI (591311) queue: receive queue value:591[0m
+[0;32mI (591311) bin: task D take binsem success[0m
+[0;32mI (592311) queue: receive queue value:592[0m
+[0;32mI (592311) bin: task D take binsem success[0m
+[0;32mI (593311) queue: receive queue value:593[0m
+[0;32mI (593311) bin: task D take binsem success[0m
+[0;32mI (594311) queue: receive queue value:594[0m
+[0;32mI (594311) bin: task D take binsem success[0m
+[0;32mI (595311) queue: receive queue value:595[0m
+[0;32mI (595311) bin: task D take binsem success[0m
+[0;32mI (596311) queue: receive queue value:596[0m
+[0;32mI (596311) bin: task D take binsem success[0m
+[0;32mI (597311) queue: receive queue value:597[0m
+[0;32mI (597311) bin: task D take binsem success[0m
+[0;32mI (598311) queue: receive queue value:598[0m
+[0;32mI (598311) bin: task D take binsem success[0m
+[0;32mI (599311) queue: receive queue value:599[0m
+[0;32mI (599311) bin: task D take binsem success[0m
+[0;32mI (600311) queue: receive queue value:600[0m
+[0;32mI (600311) bin: task D take binsem success[0m
+[0;32mI (601311) queue: receive queue value:601[0m
+[0;32mI (601311) bin: task D take binsem success[0m
+[0;32mI (602311) queue: receive queue value:602[0m
+[0;32mI (602311) bin: task D take binsem success[0m
+[0;32mI (603311) queue: receive queue value:603[0m
+[0;32mI (603311) bin: task D take binsem success[0m
+[0;32mI (604311) queue: receive queue value:604[0m
+[0;32mI (604311) bin: task D take binsem success[0m
+[0;32mI (605311) queue: receive queue value:605[0m
+[0;32mI (605311) bin: task D take binsem success[0m
+[0;32mI (606311) queue: receive queue value:606[0m
+[0;32mI (606311) bin: task D take binsem success[0m
+[0;32mI (607311) queue: receive queue value:607[0m
+[0;32mI (607311) bin: task D take binsem success[0m
+[0;32mI (608311) queue: receive queue value:608[0m
+[0;32mI (608311) bin: task D take binsem success[0m
+[0;32mI (609311) queue: receive queue value:609[0m
+[0;32mI (609311) bin: task D take binsem success[0m
+[0;32mI (610311) queue: receive queue value:610[0m
+[0;32mI (610311) bin: task D take binsem success[0m
+[0;32mI (611311) queue: receive queue value:611[0m
+[0;32mI (611311) bin: task D take binsem success[0m
+[0;32mI (612311) queue: receive queue value:612[0m
+[0;32mI (612311) bin: task D take binsem success[0m
+[0;32mI (613311) queue: receive queue value:613[0m
+[0;32mI (613311) bin: task D take binsem success[0m
+[0;32mI (614311) queue: receive queue value:614[0m
+[0;32mI (614311) bin: task D take binsem success[0m
+[0;32mI (615311) queue: receive queue value:615[0m
+[0;32mI (615311) bin: task D take binsem success[0m
+[0;32mI (616311) queue: receive queue value:616[0m
+[0;32mI (616311) bin: task D take binsem success[0m
+[0;32mI (617311) queue: receive queue value:617[0m
+[0;32mI (617311) bin: task D take binsem success[0m
+[0;32mI (618311) queue: receive queue value:618[0m
+[0;32mI (618311) bin: task D take binsem success[0m
+[0;32mI (619311) queue: receive queue value:619[0m
+[0;32mI (619311) bin: task D take binsem success[0m
+[0;32mI (620311) queue: receive queue value:620[0m
+[0;32mI (620311) bin: task D take binsem success[0m
+[0;32mI (621311) queue: receive queue value:621[0m
+[0;32mI (621311) bin: task D take binsem success[0m
+[0;32mI (622311) queue: receive queue value:622[0m
+[0;32mI (622311) bin: task D take binsem success[0m
+[0;32mI (623311) queue: receive queue value:623[0m
+[0;32mI (623311) bin: task D take binsem success[0m
+[0;32mI (624311) queue: receive queue value:624[0m
+[0;32mI (624311) bin: task D take binsem success[0m
+[0;32mI (625311) queue: receive queue value:625[0m
+[0;32mI (625311) bin: task D take binsem success[0m
+[0;32mI (626311) queue: receive queue value:626[0m
+[0;32mI (626311) bin: task D take binsem success[0m
+[0;32mI (627311) queue: receive queue value:627[0m
+[0;32mI (627311) bin: task D take binsem success[0m
+[0;32mI (628311) queue: receive queue value:628[0m
+[0;32mI (628311) bin: task D take binsem success[0m
+[0;32mI (629311) queue: receive queue value:629[0m
+[0;32mI (629311) bin: task D take binsem success[0m
+[0;32mI (630311) queue: receive queue value:630[0m
+[0;32mI (630311) bin: task D take binsem success[0m
+[0;32mI (631311) queue: receive queue value:631[0m
+[0;32mI (631311) bin: task D take binsem success[0m
+[0;32mI (632311) queue: receive queue value:632[0m
+[0;32mI (632311) bin: task D take binsem success[0m
+[0;32mI (633311) queue: receive queue value:633[0m
+[0;32mI (633311) bin: task D take binsem success[0m
+[0;32mI (634311) queue: receive queue value:634[0m
+[0;32mI (634311) bin: task D take binsem success[0m
+[0;32mI (635311) queue: receive queue value:635[0m
+[0;32mI (635311) bin: task D take binsem success[0m
+[0;32mI (636311) queue: receive queue value:636[0m
+[0;32mI (636311) bin: task D take binsem success[0m
+[0;32mI (637311) queue: receive queue value:637[0m
+[0;32mI (637311) bin: task D take binsem success[0m
+[0;32mI (638311) queue: receive queue value:638[0m
+[0;32mI (638311) bin: task D take binsem success[0m
+[0;32mI (639311) queue: receive queue value:639[0m
+[0;32mI (639311) bin: task D take binsem success[0m
+[0;32mI (640311) queue: receive queue value:640[0m
+[0;32mI (640311) bin: task D take binsem success[0m
+[0;32mI (641311) queue: receive queue value:641[0m
+[0;32mI (641311) bin: task D take binsem success[0m
+[0;32mI (642311) queue: receive queue value:642[0m
+[0;32mI (642311) bin: task D take binsem success[0m
+[0;32mI (643311) queue: receive queue value:643[0m
+[0;32mI (643311) bin: task D take binsem success[0m
+[0;32mI (644311) queue: receive queue value:644[0m
+[0;32mI (644311) bin: task D take binsem success[0m
+[0;32mI (645311) queue: receive queue value:645[0m
+[0;32mI (645311) bin: task D take binsem success[0m
+[0;32mI (646311) queue: receive queue value:646[0m
+[0;32mI (646311) bin: task D take binsem success[0m
+[0;32mI (647311) queue: receive queue value:647[0m
+[0;32mI (647311) bin: task D take binsem success[0m
+[0;32mI (648311) queue: receive queue value:648[0m
+[0;32mI (648311) bin: task

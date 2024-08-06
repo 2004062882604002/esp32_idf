@@ -1,0 +1,350 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (27) boot: ESP-IDF v5.3-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Aug  6 2024 10:17:12[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a508h ( 42248) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001a530 vaddr=3fc92800 size=02a34h ( 10804) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0001cf6c vaddr=40374000 size=030ach ( 12460) load[0m
+[0;32mI (119) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=17880h ( 96384) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=000378a8 vaddr=403770ac size=0b73ch ( 46908) load[0m
+[0;32mI (159) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (159) boot: Disabling RNG early entropy source...[0m
+[0;32mI (170) cpu_start: Multicore app[0m
+[0;32mI (180) cpu_start: Pro cpu start user code[0m
+[0;32mI (180) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (183) app_init: Project name:     Event[0m
+[0;32mI (188) app_init: App version:      1[0m
+[0;32mI (192) app_init: Compile time:     Aug  6 2024 10:16:31[0m
+[0;32mI (198) app_init: ELF file SHA256:  ec689ef93...[0m
+[0;32mI (204) app_init: ESP-IDF:          v5.3-dirty[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (219) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (231) heap_init: At 3FC95AF8 len 00053C18 (335 KiB): RAM[0m
+[0;32mI (237) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (243) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (256) spi_flash: detected chip: gd[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;33mW (263) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (277) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (284) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (291) main_task: Started on CPU0[0m
+[0;32mI (311) main_task: Calling app_main()[0m
+[0;32mI (311) ev: get BIT0 event[0m
+[0;32mI (311) main_task: Returned from app_main()[0m
+[0;32mI (511) ev: notify wait value:0[0m
+[0;32mI (1311) ev: get BIT1 event[0m
+[0;32mI (1511) ev: notify wait value:1[0m
+[0;32mI (2311) ev: get BIT0 event[0m
+[0;32mI (2511) ev: notify wait value:2[0m
+[0;32mI (3311) ev: get BIT1 event[0m
+[0;32mI (3511) ev: notify wait value:3[0m
+[0;32mI (4311) ev: get BIT0 event[0m
+[0;32mI (4511) ev: notify wait value:4[0m
+[0;32mI (5311) ev: get BIT1 event[0m
+[0;32mI (5511) ev: notify wait value:5[0m
+[0;32mI (6311) ev: get BIT0 event[0m
+[0;32mI (6511) ev: notify wait value:6[0m
+[0;32mI (7311) ev: get BIT1 event[0m
+[0;32mI (7511) ev: notify wait value:7[0m
+[0;32mI (8311) ev: get BIT0 event[0m
+[0;32mI (8511) ev: notify wait value:8[0m
+[0;32mI (9311) ev: get BIT1 event[0m
+[0;32mI (9511) ev: notify wait value:9[0m
+[0;32mI (10311) ev: get BIT0 event[0m
+[0;32mI (10511) ev: notify wait value:10[0m
+[0;32mI (11311) ev: get BIT1 event[0m
+[0;32mI (11511) ev: notify wait value:11[0m
+[0;32mI (12311) ev: get BIT0 event[0m
+[0;32mI (12511) ev: notify wait value:12[0m
+[0;32mI (13311) ev: get BIT1 event[0m
+[0;32mI (13511) ev: notify wait value:13[0m
+[0;32mI (14311) ev: get BIT0 event[0m
+[0;32mI (14511) ev: notify wait value:14[0m
+[0;32mI (15311) ev: get BIT1 event[0m
+[0;32mI (15511) ev: notify wait value:15[0m
+[0;32mI (16311) ev: get BIT0 event[0m
+[0;32mI (16511) ev: notify wait value:16[0m
+[0;32mI (17311) ev: get BIT1 event[0m
+[0;32mI (17511) ev: notify wait value:17[0m
+[0;32mI (18311) ev: get BIT0 event[0m
+[0;32mI (18511) ev: notify wait value:18[0m
+[0;32mI (19311) ev: get BIT1 event[0m
+[0;32mI (19511) ev: notify wait value:19[0m
+[0;32mI (20311) ev: get BIT0 event[0m
+[0;32mI (20511) ev: notify wait value:20[0m
+[0;32mI (21311) ev: get BIT1 event[0m
+[0;32mI (21511) ev: notify wait value:21[0m
+[0;32mI (22311) ev: get BIT0 event[0m
+[0;32mI (22511) ev: notify wait value:22[0m
+[0;32mI (23311) ev: get BIT1 event[0m
+[0;32mI (23511) ev: notify wait value:23[0m
+[0;32mI (24311) ev: get BIT0 event[0m
+[0;32mI (24511) ev: notify wait value:24[0m
+[0;32mI (25311) ev: get BIT1 event[0m
+[0;32mI (25511) ev: notify wait value:25[0m
+[0;32mI (26311) ev: get BIT0 event[0m
+[0;32mI (26511) ev: notify wait value:26[0m
+[0;32mI (27311) ev: get BIT1 event[0m
+[0;32mI (27511) ev: notify wait value:27[0m
+[0;32mI (28311) ev: get BIT0 event[0m
+[0;32mI (28511) ev: notify wait value:28[0m
+[0;32mI (29311) ev: get BIT1 event[0m
+[0;32mI (29511) ev: notify wait value:29[0m
+[0;32mI (30311) ev: get BIT0 event[0m
+[0;32mI (30511) ev: notify wait value:30[0m
+[0;32mI (31311) ev: get BIT1 event[0m
+[0;32mI (31511) ev: notify wait value:31[0m
+[0;32mI (32311) ev: get BIT0 event[0m
+[0;32mI (32511) ev: notify wait value:32[0m
+[0;32mI (33311) ev: get BIT1 event[0m
+[0;32mI (33511) ev: notify wait value:33[0m
+[0;32mI (34311) ev: get BIT0 event[0m
+[0;32mI (34511) ev: notify wait value:34[0m
+[0;32mI (35311) ev: get BIT1 event[0m
+[0;32mI (35511) ev: notify wait value:35[0m
+[0;32mI (36311) ev: get BIT0 event[0m
+[0;32mI (36511) ev: notify wait value:36[0m
+[0;32mI (37311) ev: get BIT1 event[0m
+[0;32mI (37511) ev: notify wait value:37[0m
+[0;32mI (38311) ev: get BIT0 event[0m
+[0;32mI (38511) ev: notify wait value:38[0m
+[0;32mI (39311) ev: get BIT1 event[0m
+[0;32mI (39511) ev: notify wait value:39[0m
+[0;32mI (40311) ev: get BIT0 event[0m
+[0;32mI (40511) ev: notify wait value:40[0m
+[0;32mI (41311) ev: get BIT1 event[0m
+[0;32mI (41511) ev: notify wait value:41[0m
+[0;32mI (42311) ev: get BIT0 event[0m
+[0;32mI (42511) ev: notify wait value:42[0m
+[0;32mI (43311) ev: get BIT1 event[0m
+[0;32mI (43511) ev: notify wait value:43[0m
+[0;32mI (44311) ev: get BIT0 event[0m
+[0;32mI (44511) ev: notify wait value:44[0m
+[0;32mI (45311) ev: get BIT1 event[0m
+[0;32mI (45511) ev: notify wait value:45[0m
+[0;32mI (46311) ev: get BIT0 event[0m
+[0;32mI (46511) ev: notify wait value:46[0m
+[0;32mI (47311) ev: get BIT1 event[0m
+[0;32mI (47511) ev: notify wait value:47[0m
+[0;32mI (48311) ev: get BIT0 event[0m
+[0;32mI (48511) ev: notify wait value:48[0m
+[0;32mI (49311) ev: get BIT1 event[0m
+[0;32mI (49511) ev: notify wait value:49[0m
+[0;32mI (50311) ev: get BIT0 event[0m
+[0;32mI (50511) ev: notify wait value:50[0m
+[0;32mI (51311) ev: get BIT1 event[0m
+[0;32mI (51511) ev: notify wait value:51[0m
+[0;32mI (52311) ev: get BIT0 event[0m
+[0;32mI (52511) ev: notify wait value:52[0m
+[0;32mI (53311) ev: get BIT1 event[0m
+[0;32mI (53511) ev: notify wait value:53[0m
+[0;32mI (54311) ev: get BIT0 event[0m
+[0;32mI (54511) ev: notify wait value:54[0m
+[0;32mI (55311) ev: get BIT1 event[0m
+[0;32mI (55511) ev: notify wait value:55[0m
+[0;32mI (56311) ev: get BIT0 event[0m
+[0;32mI (56511) ev: notify wait value:56[0m
+[0;32mI (57311) ev: get BIT1 event[0m
+[0;32mI (57511) ev: notify wait value:57[0m
+[0;32mI (58311) ev: get BIT0 event[0m
+[0;32mI (58511) ev: notify wait value:58[0m
+[0;32mI (59311) ev: get BIT1 event[0m
+[0;32mI (59511) ev: notify wait value:59[0m
+[0;32mI (60311) ev: get BIT0 event[0m
+[0;32mI (60511) ev: notify wait value:60[0m
+[0;32mI (61311) ev: get BIT1 event[0m
+[0;32mI (61511) ev: notify wait value:61[0m
+[0;32mI (62311) ev: get BIT0 event[0m
+[0;32mI (62511) ev: notify wait value:62[0m
+[0;32mI (63311) ev: get BIT1 event[0m
+[0;32mI (63511) ev: notify wait value:63[0m
+[0;32mI (64311) ev: get BIT0 event[0m
+[0;32mI (64511) ev: notify wait value:64[0m
+[0;32mI (65311) ev: get BIT1 event[0m
+[0;32mI (65511) ev: notify wait value:65[0m
+[0;32mI (66311) ev: get BIT0 event[0m
+[0;32mI (66511) ev: notify wait value:66[0m
+[0;32mI (67311) ev: get BIT1 event[0m
+[0;32mI (67511) ev: notify wait value:67[0m
+[0;32mI (68311) ev: get BIT0 event[0m
+[0;32mI (68511) ev: notify wait value:68[0m
+[0;32mI (69311) ev: get BIT1 event[0m
+[0;32mI (69511) ev: notify wait value:69[0m
+[0;32mI (70311) ev: get BIT0 event[0m
+[0;32mI (70511) ev: notify wait value:70[0m
+[0;32mI (71311) ev: get BIT1 event[0m
+[0;32mI (71511) ev: notify wait value:71[0m
+[0;32mI (72311) ev: get BIT0 event[0m
+[0;32mI (72511) ev: notify wait value:72[0m
+[0;32mI (73311) ev: get BIT1 event[0m
+[0;32mI (73511) ev: notify wait value:73[0m
+[0;32mI (74311) ev: get BIT0 event[0m
+[0;32mI (74511) ev: notify wait value:74[0m
+[0;32mI (75311) ev: get BIT1 event[0m
+[0;32mI (75511) ev: notify wait value:75[0m
+[0;32mI (76311) ev: get BIT0 event[0m
+[0;32mI (76511) ev: notify wait value:76[0m
+[0;32mI (77311) ev: get BIT1 event[0m
+[0;32mI (77511) ev: notify wait value:77[0m
+[0;32mI (78311) ev: get BIT0 event[0m
+[0;32mI (78511) ev: notify wait value:78[0m
+[0;32mI (79311) ev: get BIT1 event[0m
+[0;32mI (79511) ev: notify wait value:79[0m
+[0;32mI (80311) ev: get BIT0 event[0m
+[0;32mI (80511) ev: notify wait value:80[0m
+[0;32mI (81311) ev: get BIT1 event[0m
+[0;32mI (81511) ev: notify wait value:81[0m
+[0;32mI (82311) ev: get BIT0 event[0m
+[0;32mI (82511) ev: notify wait value:82[0m
+[0;32mI (83311) ev: get BIT1 event[0m
+[0;32mI (83511) ev: notify wait value:83[0m
+[0;32mI (84311) ev: get BIT0 event[0m
+[0;32mI (84511) ev: notify wait value:84[0m
+[0;32mI (85311) ev: get BIT1 event[0m
+[0;32mI (85511) ev: notify wait value:85[0m
+[0;32mI (86311) ev: get BIT0 event[0m
+[0;32mI (86511) ev: notify wait value:86[0m
+[0;32mI (87311) ev: get BIT1 event[0m
+[0;32mI (87511) ev: notify wait value:87[0m
+[0;32mI (88311) ev: get BIT0 event[0m
+[0;32mI (88511) ev: notify wait value:88[0m
+[0;32mI (89311) ev: get BIT1 event[0m
+[0;32mI (89511) ev: notify wait value:89[0m
+[0;32mI (90311) ev: get BIT0 event[0m
+[0;32mI (90511) ev: notify wait value:90[0m
+[0;32mI (91311) ev: get BIT1 event[0m
+[0;32mI (91511) ev: notify wait value:91[0m
+[0;32mI (92311) ev: get BIT0 event[0m
+[0;32mI (92511) ev: notify wait value:92[0m
+[0;32mI (93311) ev: get BIT1 event[0m
+[0;32mI (93511) ev: notify wait value:93[0m
+[0;32mI (94311) ev: get BIT0 event[0m
+[0;32mI (94511) ev: notify wait value:94[0m
+[0;32mI (95311) ev: get BIT1 event[0m
+[0;32mI (95511) ev: notify wait value:95[0m
+[0;32mI (96311) ev: get BIT0 event[0m
+[0;32mI (96511) ev: notify wait value:96[0m
+[0;32mI (97311) ev: get BIT1 event[0m
+[0;32mI (97511) ev: notify wait value:97[0m
+[0;32mI (98311) ev: get BIT0 event[0m
+[0;32mI (98511) ev: notify wait value:98[0m
+[0;32mI (99311) ev: get BIT1 event[0m
+[0;32mI (99511) ev: notify wait value:99[0m
+[0;32mI (100311) ev: get BIT0 event[0m
+[0;32mI (100511) ev: notify wait value:100[0m
+[0;32mI (101311) ev: get BIT1 event[0m
+[0;32mI (101511) ev: notify wait value:101[0m
+[0;32mI (102311) ev: get BIT0 event[0m
+[0;32mI (102511) ev: notify wait value:102[0m
+[0;32mI (103311) ev: get BIT1 event[0m
+[0;32mI (103511) ev: notify wait value:103[0m
+[0;32mI (104311) ev: get BIT0 event[0m
+[0;32mI (104511) ev: notify wait value:104[0m
+[0;32mI (105311) ev: get BIT1 event[0m
+[0;32mI (105511) ev: notify wait value:105[0m
+[0;32mI (106311) ev: get BIT0 event[0m
+[0;32mI (106511) ev: notify wait value:106[0m
+[0;32mI (107311) ev: get BIT1 event[0m
+[0;32mI (107511) ev: notify wait value:107[0m
+[0;32mI (108311) ev: get BIT0 event[0m
+[0;32mI (108511) ev: notify wait value:108[0m
+[0;32mI (109311) ev: get BIT1 event[0m
+[0;32mI (109511) ev: notify wait value:109[0m
+[0;32mI (110311) ev: get BIT0 event[0m
+[0;32mI (110511) ev: notify wait value:110[0m
+[0;32mI (111311) ev: get BIT1 event[0m
+[0;32mI (111511) ev: notify wait value:111[0m
+[0;32mI (112311) ev: get BIT0 event[0m
+[0;32mI (112511) ev: notify wait value:112[0m
+[0;32mI (113311) ev: get BIT1 event[0m
+[0;32mI (113511) ev: notify wait value:113[0m
+[0;32mI (114311) ev: get BIT0 event[0m
+[0;32mI (114511) ev: notify wait value:114[0m
+[0;32mI (115311) ev: get BIT1 event[0m
+[0;32mI (115511) ev: notify wait value:115[0m
+[0;32mI (116311) ev: get BIT0 event[0m
+[0;32mI (116511) ev: notify wait value:116[0m
+[0;32mI (117311) ev: get BIT1 event[0m
+[0;32mI (117511) ev: notify wait value:117[0m
+[0;32mI (118311) ev: get BIT0 event[0m
+[0;32mI (118511) ev: notify wait value:118[0m
+[0;32mI (119311) ev: get BIT1 event[0m
+[0;32mI (119511) ev: notify wait value:119[0m
+[0;32mI (120311) ev: get BIT0 event[0m
+[0;32mI (120511) ev: notify wait value:120[0m
+[0;32mI (121311) ev: get BIT1 event[0m
+[0;32mI (121511) ev: notify wait value:121[0m
+[0;32mI (122311) ev: get BIT0 event[0m
+[0;32mI (122511) ev: notify wait value:122[0m
+[0;32mI (123311) ev: get BIT1 event[0m
+[0;32mI (123511) ev: notify wait value:123[0m
+[0;32mI (124311) ev: get BIT0 event[0m
+[0;32mI (124511) ev: notify wait value:124[0m
+[0;32mI (125311) ev: get BIT1 event[0m
+[0;32mI (125511) ev: notify wait value:125[0m
+[0;32mI (126311) ev: get BIT0 event[0m
+[0;32mI (126511) ev: notify wait value:126[0m
+[0;32mI (127311) ev: get BIT1 event[0m
+[0;32mI (127511) ev: notify wait value:127[0m
+[0;32mI (128311) ev: get BIT0 event[0m
+[0;32mI (128511) ev: notify wait value:128[0m
+[0;32mI (129311) ev: get BIT1 event[0m
+[0;32mI (129511) ev: notify wait value:129[0m
+[0;32mI (130311) ev: get BIT0 event[0m
+[0;32mI (130511) ev: notify wait value:130[0m
+[0;32mI (131311) ev: get BIT1 event[0m
+[0;32mI (131511) ev: notify wait value:131[0m
+[0;32mI (132311) ev: get BIT0 event[0m
+[0;32mI (132511) ev: notify wait value:132[0m
+[0;32mI (133311) ev: get BIT1 event[0m
+[0;32mI (133511) ev: notify wait value:133[0m
+[0;32mI (134311) ev: get BIT0 event[0m
+[0;32mI (134511) ev: notify wait value:134[0m
+[0;32mI (135311) ev: get BIT1 event[0m
+[0;32mI (135511) ev: notify wait value:135[0m
+[0;32mI (136311) ev: get BIT0 event[0m
+[0;32mI (136511) ev: notify wait value:136[0m
+[0;32mI (137311) ev: get BIT1 event[0m
+[0;32mI (137511) ev: notify wait value:137[0m
+[0;32mI (138311) ev: get BIT0 event[0m
+[0;32mI (138511) ev: notify wait value:138[0m
+[0;32mI (139311) ev: get BIT1 event[0m
+[0;32mI (139511) ev: notify wait value:139[0m
+[0;32mI (140311) ev: get BIT0 event[0m
+[0;32mI (140511) ev: notify wait value:140[0m
+[0;32mI (141311) ev: get BIT1 event[0m
+[0;32mI (141511) ev: notify wait value:141[0m
+[0;32mI (142311) ev: get BIT0 event[0m
+[0;32mI (142511) ev: notify wait value:142[0m
+[0;32mI (143311) ev: get BIT1 event[0m
+[0;32mI (143511) ev: notify wait value:143[0m
+[0;32mI (144311) ev: get BIT0 event[0m
+[0;32mI (144511) ev: notify wait value:144[0m
+[0;32mI (145311) ev: get BIT1 event[0m
+[0;32mI (145511) ev: notify wait value:145[0m
+[0;32mI (146311) ev: get BIT0 event[0m
+[0;32mI (146511) ev: notify wait value:146
