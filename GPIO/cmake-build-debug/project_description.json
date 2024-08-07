@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "GPIO",
-    "project_version":    "1",
+    "project_version":    "6d7c4c0-dirty",
     "project_path":       "D:/BaiduSyncdisk/Esp32/GPIO",
     "idf_path":           "D:/Espressif/frameworks/esp-idf-v5.3",
     "build_dir":          "D:/BaiduSyncdisk/Esp32/GPIO/cmake-build-debug",

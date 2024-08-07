@@ -312,6 +312,7 @@ D:/BaiduSyncdisk/Esp32/GPIO/cmake-build-debug/esp-idf/pthread/CMakeFiles/install
 D:/BaiduSyncdisk/Esp32/GPIO/cmake-build-debug/esp-idf/pthread/CMakeFiles/install/local.dir
 D:/BaiduSyncdisk/Esp32/GPIO/cmake-build-debug/esp-idf/pthread/CMakeFiles/install/strip.dir
 D:/BaiduSyncdisk/Esp32/GPIO/cmake-build-debug/esp-idf/cxx/CMakeFiles/__idf_cxx.dir
+D:/BaiduSyncdisk/Esp32/GPIO/cmake-build-debug/esp-idf/cxx/CMakeFiles/libgcc_cxx.dir
 D:/BaiduSyncdisk/Esp32/GPIO/cmake-build-debug/esp-idf/cxx/CMakeFiles/edit_cache.dir
 D:/BaiduSyncdisk/Esp32/GPIO/cmake-build-debug/esp-idf/cxx/CMakeFiles/rebuild_cache.dir
 D:/BaiduSyncdisk/Esp32/GPIO/cmake-build-debug/esp-idf/cxx/CMakeFiles/list_install_components.dir

@@ -1,28 +1,4 @@
 "E:\Program\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=E:/Program/CLion 2022.3.1/bin/ninja/win/ninja.exe" -G Ninja -S D:\BaiduSyncdisk\Esp32\GPIO -B D:\BaiduSyncdisk\Esp32\GPIO\cmake-build-debug
--- Found Git: D:/Espressif/tools/idf-git/2.44.0/cmd/git.exe (found version "2.44.0.windows.1") 
--- The C compiler identification is GNU 13.2.0
--- The CXX compiler identification is GNU 13.2.0
--- The ASM compiler identification is GNU
--- Found assembler: D:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc.exe
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: D:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: D:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- git rev-parse returned 'fatal: detected dubious ownership in repository at 'D:/'
-'D:/' is owned by:
-	NT AUTHORITY/SYSTEM (S-1-5-18)
-but the current user is:
-	LAPTOP-8ID5DIK4/Lenovo (S-1-5-21-1161118959-1989663566-2897166601-1007)
-To add an exception for this directory, call:
-
-	git config --global --add safe.directory D:/'
--- Could not use 'git describe' to determine PROJECT_VER.
 -- Building ESP-IDF components for target esp32s3
 -- Checking Python dependencies...
 Python requirements are satisfied.
@@ -32,13 +8,7 @@ Requirement files:
 Python being checked: D:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe
 -- Project sdkconfig file D:/BaiduSyncdisk/Esp32/GPIO/sdkconfig
 -- Compiler supported targets: xtensa-esp-elf
--- Found Python3: E:/Program/python37/python.exe (found version "3.7.3") found components: Interpreter 
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
--- Found Threads: TRUE  
--- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
--- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
--- App "GPIO" version: 1
+-- App "GPIO" version: 6d7c4c0-dirty
 -- Adding linker script D:/BaiduSyncdisk/Esp32/GPIO/cmake-build-debug/esp-idf/esp_system/ld/memory.ld
 -- Adding linker script D:/BaiduSyncdisk/Esp32/GPIO/cmake-build-debug/esp-idf/esp_system/ld/sections.ld.in
 -- Adding linker script D:/Espressif/frameworks/esp-idf-v5.3/components/esp_rom/esp32s3/ld/esp32s3.rom.ld

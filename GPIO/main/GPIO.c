@@ -5,7 +5,7 @@
 #include "driver/gpio.h"
 #include "driver/ledc.h"
 
-#define LED_GPIO GPIO_NUM_27
+#define LED_GPIO GPIO_NUM_37
 #define FULL_EV_BIT BIT0
 #define EMPTY_EV_BIT BIT1
 
@@ -73,15 +73,15 @@ void app_main(void)
             .speed_mode=LEDC_LOW_SPEED_MODE,
             .channel=LEDC_CHANNEL_0,
             .timer_sel=LEDC_TIMER_0,
-            .gpio_num=GPIO_NUM_27,
+            .gpio_num=GPIO_NUM_37,
             .duty=0,
             .intr_type=LEDC_INTR_DISABLE,
     };
     ledc_channel_config(&ledc_channel);
 
     ledc_fade_func_install(0);
-    ledc_set_fade_with_time(LEDC_LOW_SPEED_MODE,LEDC_CHANNEL_0,8191,2000);
 
+    ledc_set_fade_with_time(LEDC_LOW_SPEED_MODE,LEDC_CHANNEL_0,8191,2000);
     ledc_fade_start(LEDC_LOW_SPEED_MODE,LEDC_CHANNEL_0,LEDC_FADE_NO_WAIT);
 
     ledc_event_handle=xEventGroupCreate();
@@ -91,6 +91,6 @@ void app_main(void)
         .fade_cb=ledc_finish_cb,
     };
     ledc_cb_register(LEDC_LOW_SPEED_MODE,LEDC_CHANNEL_0,&cbs,NULL);
-    xTaskCreatePinnedToCore(led_run_task,"led_run_task",2048,NULL,3,NULL,1);
+    xTaskCreatePinnedToCore(led_run_task,"led_run_task",8191,NULL,3,NULL,1);
 
 }
