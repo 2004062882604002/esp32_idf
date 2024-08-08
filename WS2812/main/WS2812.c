@@ -14,7 +14,7 @@
 #define RMT_LED_STRIP_GPIO_NUM      48
 
 #define EXAMPLE_LED_NUMBERS         1
-#define EXAMPLE_CHASE_SPEED_MS      10
+#define EXAMPLE_CHASE_SPEED_MS      100
 
 static const char *TAG = "example";
 
@@ -74,9 +74,9 @@ void led_strip_hsv2rgb(uint32_t h, uint32_t s, uint32_t v, uint32_t *r, uint32_t
 
 void app_main(void)
 {
-    uint32_t red = 0;
+    uint32_t red = 50;
     uint32_t green = 0;
-    uint32_t blue = 0;
+    uint32_t blue = 220;
     uint16_t hue = 0;
     uint16_t start_rgb = 0;
 

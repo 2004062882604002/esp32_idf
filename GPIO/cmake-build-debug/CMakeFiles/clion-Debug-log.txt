@@ -8,7 +8,7 @@ Requirement files:
 Python being checked: D:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe
 -- Project sdkconfig file D:/BaiduSyncdisk/Esp32/GPIO/sdkconfig
 -- Compiler supported targets: xtensa-esp-elf
--- App "GPIO" version: 6d7c4c0-dirty
+-- App "GPIO" version: 8dafe54-dirty
 -- Adding linker script D:/BaiduSyncdisk/Esp32/GPIO/cmake-build-debug/esp-idf/esp_system/ld/memory.ld
 -- Adding linker script D:/BaiduSyncdisk/Esp32/GPIO/cmake-build-debug/esp-idf/esp_system/ld/sections.ld.in
 -- Adding linker script D:/Espressif/frameworks/esp-idf-v5.3/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
